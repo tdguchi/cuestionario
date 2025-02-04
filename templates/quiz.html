@@ -41,9 +41,9 @@
             </div>
             <div class="card-body">
                 <form action="/" method="get" class="row g-3">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <select class="form-select" name="subject" required>
-                            <option value="">Selecciona una asignatura...</option>
+                            <option value="">Selecciona asignatura...</option>
                             {% for subject in subjects %}
                                 <option value="{{ subject }}" {% if selected_subject == subject %}selected{% endif %}>
                                     {{ subject }}
@@ -51,15 +51,22 @@
                             {% endfor %}
                         </select>
                     </div>
-                    <div class="col-md-2 align-self-end">
+                    <div class="col-md-2">
                         <input type="number" class="form-control" name="limit" min="1" placeholder="№ preguntas" value="{{ limit if limit else '' }}">
                     </div>
-                    <div class="col-md-2 align-self-end">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="only_failed" value="true" id="onlyFailed" 
+                    <div class="col-md-4">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input filter-checkbox" type="checkbox" name="only_failed" value="true" id="onlyFailed" 
                                    {% if only_failed == 'true' %}checked{% endif %}>
                             <label class="form-check-label" for="onlyFailed">
                                 Solo falladas
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input filter-checkbox" type="checkbox" name="only_new" value="true" id="onlyNew"
+                                   {% if only_new == 'true' %}checked{% endif %}>
+                            <label class="form-check-label" for="onlyNew">
+                                Solo nuevas
                             </label>
                         </div>
                     </div>

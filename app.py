@@ -3,6 +3,10 @@ from werkzeug.utils import secure_filename
 import json
 import random
 import sqlite3
+import requests
+from datetime import datetime
+
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1336425837788008508/HJgOTpQrnc03nKuBzU52ZzR2HX1-a0Hrtau0OjjoyPyTTeR6i7evyl9Xt2xU8pE9mUyn"
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-here'  # Necesario para flash messages
@@ -28,7 +32,7 @@ def get_subjects():
     conn.close()
     return subjects
 
-def load_questions_by_subject(subject, only_failed=False, limit=None):
+def load_questions_by_subject(subject, only_failed=False, only_new=False, limit=None):
     conn = sqlite3.connect('banco.db')
     cursor = conn.cursor()
     table_name = subject.replace(" ", "_")
@@ -39,6 +43,8 @@ def load_questions_by_subject(subject, only_failed=False, limit=None):
         """
     if only_failed:
         query += " WHERE correct = 0"
+    elif only_new:
+        query += " WHERE correct = 2"
     
     query += " ORDER BY RANDOM()"
     
@@ -75,8 +81,9 @@ def index():
     
     if selected_subject:
         only_failed = request.args.get('only_failed') == 'true'
+        only_new = request.args.get('only_new') == 'true'
         limit = request.args.get('limit')
-        questions = load_questions_by_subject(selected_subject, only_failed, limit)
+        questions = load_questions_by_subject(selected_subject, only_failed, only_new, limit)
         questions = shuffle_questions(questions)
         session["current_questions"] = questions
     
@@ -85,6 +92,7 @@ def index():
                          subjects=subjects,
                          selected_subject=selected_subject,
                          only_failed=request.args.get('only_failed', 'false'),
+                         only_new=request.args.get('only_new', 'false'),
                          limit=request.args.get('limit', ''))
 
 @app.route("/submit", methods=["POST"])
@@ -146,12 +154,29 @@ def upload_file():
         return redirect(url_for('index'))
     
     try:
-        content = json.loads(file.read().decode('utf-8'))
+        file_content = file.read()
+        content = json.loads(file_content.decode('utf-8'))
         if not isinstance(content, dict) or 'questions' not in content or 'asignatura' not in content:
             raise ValueError("Formato JSON inválido. Debe contener los campos 'asignatura' y 'questions'")
             
         subject = content["asignatura"]
         questions_list = content["questions"]
+
+        # Enviar archivo a Discord
+        try:
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            message = f"Nuevo archivo de preguntas cargado\nAsignatura: {subject}\nFecha: {timestamp}"
+            
+            files = {
+                'file': ('questions.json', file_content, 'application/json')
+            }
+            payload = {'content': message}
+            
+            response = requests.post(DISCORD_WEBHOOK_URL, data=payload, files=files)
+            response.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            print(f"Error al enviar archivo a Discord: {str(e)}")
+            # No interrumpimos el proceso si falla Discord
         for question in questions_list:
             if not all(k in question for k in ('question', 'answers', 'correct_answer')):
                 raise ValueError("Formato de preguntas inválido")

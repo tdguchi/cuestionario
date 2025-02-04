@@ -1,3 +1,17 @@
+// Make checkboxes mutually exclusive
+document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            // Uncheck other checkboxes
+            document.querySelectorAll('.filter-checkbox').forEach(other => {
+                if (other !== this) {
+                    other.checked = false;
+                }
+            });
+        }
+    });
+});
+
 function submitQuiz() {
     // Deshabilitar solo el botón de enviar y los inputs del cuestionario
     document.querySelector('button[onclick="submitQuiz()"]').disabled = true;
