@@ -73,6 +73,9 @@
         <div class="card shadow-sm">
             <div class="card-header text-center bg-primary text-white">
                 <h1>Cuestionario</h1>
+                {% if selected_subject %}
+                <h2>{{ selected_subject }}</h2>
+                {% endif %}
                 <p class="mb-0">Por favor, responde las siguientes preguntas:</p>
             </div>
             <div class="card-body">

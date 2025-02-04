@@ -121,8 +121,8 @@ def submit():
             cursor = conn.cursor()
             table_name = subject.replace(" ", "_")
             for r in results:
-                if not r["is_correct"]:
-                    cursor.execute(f"UPDATE {table_name} SET correct=0 WHERE question=?;", (r["question"],))
+                new_correct_value = 1 if r["is_correct"] else 0
+                cursor.execute(f"UPDATE {table_name} SET correct=? WHERE question=?;", (new_correct_value, r["question"]))
             conn.commit()
             conn.close()
         except Exception as e:
@@ -193,7 +193,7 @@ def upload_file():
                 opt4 = answers[3] if len(answers) > 3 else None
                 cursor.execute(f"""
                     INSERT INTO {table_name} (question, correct, option1, option2, option3, option4, correct_option)
-                    VALUES (?, 1, ?, ?, ?, ?, ?);
+                    VALUES (?, 2, ?, ?, ?, ?, ?);
                 """, (q["question"], opt1, opt2, opt3, opt4, q["correct_answer"]))
             else:
                 duplicates_count += 1
