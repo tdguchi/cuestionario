@@ -1,0 +1,11 @@
+.feedback-icon {
+    display: none;
+    margin-left: 10px;
+}
+
+.correct-answer {
+    color: #198754;
+    display: none;
+    margin-left: 10px;
+    font-style: italic;
+}

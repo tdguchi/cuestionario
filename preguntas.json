@@ -1,0 +1,55 @@
+{
+    "asignatura": "Ciencias de conocimiento del mundo contemporáneo",
+    "questions": [
+      {
+        "question": "¿En qué año se fundó la NASA?",
+        "answers": [
+          "1958",
+          "1962",
+          "1955",
+          "1969"
+        ],
+        "correct_answer": "1958"
+      },
+      {
+        "question": "¿Cuál es el elemento químico más abundante en el universo?",
+        "answers": [
+          "Oxígeno",
+          "Helio",
+          "Hidrógeno",
+          "Carbono"
+        ],
+        "correct_answer": "Hidrógeno"
+      },
+      {
+        "question": "¿Qué lenguaje de programación fue creado por Guido van Rossum?",
+        "answers": [
+          "Java",
+          "Python",
+          "Ruby",
+          "PHP"
+        ],
+        "correct_answer": "Python"
+      },
+      {
+        "question": "¿Cuál es el país más grande del mundo por superficie?",
+        "answers": [
+          "China",
+          "Estados Unidos",
+          "Canadá",
+          "Rusia"
+        ],
+        "correct_answer": "Rusia"
+      },
+      {
+        "question": "¿Cuál es el hueso más largo del cuerpo humano?",
+        "answers": [
+          "Húmero",
+          "Fémur",
+          "Tibia",
+          "Radio"
+        ],
+        "correct_answer": "Fémur"
+      }
+    ]
+  }
