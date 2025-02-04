@@ -20,16 +20,81 @@ def shuffle_questions(questions):
         random.shuffle(question["answers"])
     return questions
 
+def get_subjects():
+    conn = sqlite3.connect('banco.db')
+    cursor = conn.cursor()
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';")
+    subjects = [row[0].replace('_', ' ') for row in cursor.fetchall()]
+    conn.close()
+    return subjects
+
+def load_questions_by_subject(subject, only_failed=False, limit=None):
+    conn = sqlite3.connect('banco.db')
+    cursor = conn.cursor()
+    table_name = subject.replace(" ", "_")
+    
+    query = f"""
+        SELECT question, option1, option2, option3, option4, correct_option 
+        FROM {table_name}
+        """
+    if only_failed:
+        query += " WHERE correct = 0"
+    
+    query += " ORDER BY RANDOM()"
+    
+    if limit and limit.isdigit():
+        query += f" LIMIT {limit}"
+        
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    conn.close()
+    
+    questions = []
+    for row in rows:
+        question, opt1, opt2, opt3, opt4, correct = row
+        answers = [ans for ans in [opt1, opt2, opt3, opt4] if ans is not None]
+        questions.append({
+            "question": question,
+            "answers": answers,
+            "correct_answer": correct
+        })
+    
+    return questions
+
 @app.route("/")
 def index():
-    questions = load_questions()
-    shuffled_questions = shuffle_questions(questions)
-    return render_template("quiz.html", questions=shuffled_questions)
+    # Limpiar la sesión y redirigir si no hay subject seleccionado
+    if not request.args.get('subject'):
+        session.clear()
+        if request.args:
+            return redirect(url_for('index'))
+
+    questions = []
+    subjects = get_subjects()
+    selected_subject = request.args.get('subject', '')
+    
+    if selected_subject:
+        only_failed = request.args.get('only_failed') == 'true'
+        limit = request.args.get('limit')
+        questions = load_questions_by_subject(selected_subject, only_failed, limit)
+        questions = shuffle_questions(questions)
+        session["current_questions"] = questions
+    
+    return render_template("quiz.html", 
+                         questions=questions,
+                         subjects=subjects,
+                         selected_subject=selected_subject,
+                         only_failed=request.args.get('only_failed', 'false'),
+                         limit=request.args.get('limit', ''))
 
 @app.route("/submit", methods=["POST"])
 def submit():
     user_answers = request.json
-    questions = load_questions()
+    subject = request.args.get('subject')
+    
+    # Usar las preguntas guardadas en la sesión
+    questions = session.get("current_questions", [])
+    
     correct_count = 0
     results = []
 
@@ -48,14 +113,10 @@ def submit():
         })
 
     score = round((correct_count / len(questions)) * 10, 1) if questions else 0
-    session["failed_questions"] = [r for r in results if not r["is_correct"]]
     
-    # Actualizar las preguntas falladas en la base de datos: marcar como 0
-    try:
-        with open("questions.json", "r", encoding="utf-8") as file:
-            data = json.load(file)
-        subject = data.get("asignatura")
-        if subject:
+    # Actualizar las preguntas falladas en la base de datos
+    if subject:
+        try:
             conn = sqlite3.connect('banco.db')
             cursor = conn.cursor()
             table_name = subject.replace(" ", "_")
@@ -64,8 +125,8 @@ def submit():
                     cursor.execute(f"UPDATE {table_name} SET correct=0 WHERE question=?;", (r["question"],))
             conn.commit()
             conn.close()
-    except Exception as e:
-        print("Error al actualizar la base de datos:", e)
+        except Exception as e:
+            print("Error al actualizar la base de datos:", e)
     
     return jsonify({"correct_count": correct_count, "nota": score, "results": results})
 
@@ -94,14 +155,16 @@ def upload_file():
         for question in questions_list:
             if not all(k in question for k in ('question', 'answers', 'correct_answer')):
                 raise ValueError("Formato de preguntas inválido")
-            
+        
+        # Guardar el archivo JSON con todas las preguntas
         file.seek(0)
         file.save('questions.json')
         
-        # Actualizar la base de datos
+        # Actualizar la base de datos solo con preguntas no duplicadas y verificar duplicados
         conn = sqlite3.connect('banco.db')
         cursor = conn.cursor()
         table_name = subject.replace(" ", "_")
+        duplicates_count = 0
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name=?;", (table_name,))
         exists = cursor.fetchone()
         if not exists:
@@ -117,9 +180,10 @@ def upload_file():
                     correct_option TEXT
                 );
             """)
+        
+        # Insertar preguntas no duplicadas
         for q in questions_list:
-            q_text = q["question"]
-            cursor.execute(f"SELECT COUNT(*) FROM {table_name} WHERE question=?;", (q_text,))
+            cursor.execute(f"SELECT COUNT(*) FROM {table_name} WHERE question=?;", (q["question"],))
             count = cursor.fetchone()[0]
             if count == 0:
                 answers = q["answers"]
@@ -130,7 +194,12 @@ def upload_file():
                 cursor.execute(f"""
                     INSERT INTO {table_name} (question, correct, option1, option2, option3, option4, correct_option)
                     VALUES (?, 1, ?, ?, ?, ?, ?);
-                """, (q_text, opt1, opt2, opt3, opt4, q["correct_answer"]))
+                """, (q["question"], opt1, opt2, opt3, opt4, q["correct_answer"]))
+            else:
+                duplicates_count += 1
+                
+        if duplicates_count > 0:
+            flash(f'Se encontraron {duplicates_count} preguntas que ya existían en la base de datos', 'info')
         conn.commit()
         conn.close()
         
@@ -140,13 +209,6 @@ def upload_file():
         flash(f'Error en el archivo JSON: {str(e)}', 'error')
         
     return redirect(url_for('index'))
-
-@app.route("/download")
-def download():
-    failed = session.get("failed_questions", [])
-    response = jsonify({"failed_questions": failed})
-    response.headers["Content-Disposition"] = "attachment; filename=failed_questions.json"
-    return response
 
 def init_db():
     conn = sqlite3.connect('banco.db')

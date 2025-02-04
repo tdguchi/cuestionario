@@ -50,6 +50,26 @@
           "Radio"
         ],
         "correct_answer": "Fémur"
+      },
+      {
+        "question": "¿Qué científico propuso la teoría de la relatividad general?",
+        "answers": [
+          "Isaac Newton",
+          "Albert Einstein",
+          "Niels Bohr",
+          "Stephen Hawking"
+        ],
+        "correct_answer": "Albert Einstein"
+      },
+      {
+        "question": "¿Cuál es el gas que las plantas absorben de la atmósfera para realizar la fotosíntesis?",
+        "answers": [
+          "Oxígeno",
+          "Nitrógeno",
+          "Dióxido de carbono",
+          "Helio"
+        ],
+        "correct_answer": "Dióxido de carbono"
       }
     ]
   }

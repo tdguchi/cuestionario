@@ -35,6 +35,41 @@
                 </form>
             </div>
         </div>
+        <div class="card shadow-sm mb-4">
+            <div class="card-header text-center bg-secondary text-white">
+                <h4>Seleccionar Preguntas</h4>
+            </div>
+            <div class="card-body">
+                <form action="/" method="get" class="row g-3">
+                    <div class="col-md-6">
+                        <select class="form-select" name="subject" required>
+                            <option value="">Selecciona una asignatura...</option>
+                            {% for subject in subjects %}
+                                <option value="{{ subject }}" {% if selected_subject == subject %}selected{% endif %}>
+                                    {{ subject }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-2 align-self-end">
+                        <input type="number" class="form-control" name="limit" min="1" placeholder="№ preguntas" value="{{ limit if limit else '' }}">
+                    </div>
+                    <div class="col-md-2 align-self-end">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="only_failed" value="true" id="onlyFailed" 
+                                   {% if only_failed == 'true' %}checked{% endif %}>
+                            <label class="form-check-label" for="onlyFailed">
+                                Solo falladas
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-secondary w-100">Cargar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% if questions %}
         <div class="card shadow-sm">
             <div class="card-header text-center bg-primary text-white">
                 <h1>Cuestionario</h1>
@@ -68,11 +103,15 @@
             </div>
         </div>
         <div id="results" class="mt-4"></div>
+        {% else %}
+        <div class="card shadow-sm">
+            <div class="card-body text-center">
+                <p class="mb-0">Selecciona una asignatura y pulsa "Cargar" para empezar el cuestionario.</p>
+            </div>
+        </div>
+        {% endif %}
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-  <div style="text-align: center; margin: 20px;">
-    <a href="/download" class="btn" style="padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 4px;">Descargar PDF</a>
-  </div>
 </body>
 </html>

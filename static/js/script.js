@@ -1,7 +1,7 @@
 function submitQuiz() {
-    // Deshabilitar el botón de enviar y todos los inputs
-    document.querySelector('button[type="button"]').disabled = true;
-    document.querySelectorAll('.form-check-input').forEach(input => input.disabled = true);
+    // Deshabilitar solo el botón de enviar y los inputs del cuestionario
+    document.querySelector('button[onclick="submitQuiz()"]').disabled = true;
+    document.querySelectorAll('#quiz-form .form-check-input').forEach(input => input.disabled = true);
 
     let questions = document.querySelectorAll('.form-check-input:checked');
     let answers = [];
@@ -13,7 +13,11 @@ function submitQuiz() {
         answers.push({question: questionText, answer: selectedAnswer});
     });
     
-    fetch('/submit', {
+    // Obtener los parámetros actuales de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const submitUrl = `/submit?${urlParams.toString()}`;
+    
+    fetch(submitUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(answers)

@@ -1,0 +1,2152 @@
+{
+    "asignatura": "Deontología",
+    "questions": [
+      {
+        "question": "Un responsable del tratamiento es: (2021 modelo A) (3.3.)",
+        "answers": [
+          "La persona que decide sobre qué datos se compran y se venden de la empresa.",
+          "La persona física o jurídica que decide que datos se compran o venden de la empresa.",
+          "La persona jurídica o física que almacena los datos.",
+          "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+        ],
+        "correct_answer": "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+      },
+      {
+        "question": "El encargado del tratamiento no debe: (2021 modelo A) (3.3.)",
+        "answers": [
+          "Implantar medidas de seguridad a los datos personales.",
+          "Tratar datos sin cumplir la normativa de protección de datos de carácter personal.",
+          "Permitir que nadie accede a los datos personales."
+        ],
+        "correct_answer": "Tratar datos sin cumplir la normativa de protección de datos de carácter personal."
+      },
+      {
+        "question": "Los datos personales no automatizados: (2021 modelo A) (2.3.)",
+        "answers": [
+          "No están sujetos a la normativa de protección de datos.",
+          "No pueden tratarse de forma automatizada por tanto no son del ámbito del RGPD.",
+          "No deben estar protegidos al no estar automatizados.",
+          "Ninguna de las anteriores es correcta."
+        ],
+        "correct_answer": "Ninguna de las anteriores es correcta."
+      },
+      {
+        "question": "Un dato personal incluido en un documento en papel: (2021 modelo A) (2.6.)",
+        "answers": [
+          "Está sujeto a la normativa de protección de datos personales sólo si se graba en soporte lógico.",
+          "No está sujeto a la normativa de protección de datos personales.",
+          "Está sujeto a la normativa como otro dato personal cualquiera.",
+          "Se puede tratar sin consentimiento porque está grabado en papel."
+        ],
+        "correct_answer": "Está sujeto a la normativa como otro dato personal cualquiera."
+      },
+      {
+        "question": "El principio de transparencia debe conllevar, concretamente: (2021 modelo A) (2.7.)",
+        "answers": [
+          "El tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario en relación a los fines para los que se traten",
+          "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa"
+        ],
+        "correct_answer": "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados."
+      },
+      {
+        "question": "El principio de minimización de datos debe ser entendido como: (2021 modelo A) (2.5.)",
+        "answers": [
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa como el tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario",
+          "En relación a los fines para los que se traten",
+          "Aquel consistente en que el responsable del fichero debe tener políticas de transparencia de protección de datos"
+        ],
+        "correct_answer": "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa como el tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario"
+      },
+      {
+        "question": "El derecho al olvido es: (2021 modelo A) (2.7.)",
+        "answers": [
+          "La obligación de que se olviden los datos de alguien.",
+          "El derecho a que el interesado olvide sus propios datos.",
+          "El derecho a que se supriman los datos."
+        ],
+        "correct_answer": "El derecho a que se supriman los datos."
+      },
+      {
+        "question": "Contratar un servicio de almacenamiento en la nube, de la base de datos personales: (2021 modelo A) (?)",
+        "answers": [
+          "Supone un alquiler de la base de datos.",
+          "Supone una cesión de datos al prestador del servicio.",
+          "Supone un encargo del tratamiento.",
+          "Supone una nueva responsabilidad de los datos para el prestador del servicio."
+        ],
+        "correct_answer": "Supone un encargo del tratamiento."
+      },
+      {
+        "question": "¿Cúal se debe informar al interesado cuando se recaban los datos personales de un tercero? (2021 modelo A)  (2.7.)",
+        "answers": [
+          "Informar al interesado en el plazo máximo de un mes.",
+          "Informar al interesado en el plazo máximo de 10 días.",
+          "Informar en cualquier momento."
+        ],
+        "correct_answer": "Informar al interesado en el plazo máximo de un mes."
+      },
+      {
+        "question": "La responsabilidad del profesional informático, por las actuaciones y relaciones empresariales, puede ser: (2021 modelo A) (1.5.)",
+        "answers": [
+          "Responsabilidad civil contractual y extracontractual.",
+          "Responsabilidad medioambiental y extracomunitaria.",
+          "Responsabilidad social y departamental.",
+          "Responsabilidad ética y social."
+        ],
+        "correct_answer": "Responsabilidad civil contractual y extracontractual."
+      },
+      {
+        "question": "¿Quién tiene derecho de desistimiento en el comercio electrónico? (2021 modelo A) (5.4.)",
+        "answers": [
+          "El comprador, excepto para determinados productos.",
+          "El comprador, si el vendedor lo ofrece.",
+          "Cualquiera, cuando el producto es importado.",
+          "Los consumidores que lo hayan contratado."
+        ],
+        "correct_answer": "El comprador, excepto para determinados productos."
+      },
+      {
+        "question": "Los tipos de firma electrónica son: (2021 modelo A)  (6.2.)",
+        "answers": [
+          "Firma electrónica escaneada, firma electrónica avanzada y firma electrónica simple.",
+          "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida.",
+          "Firma electrónica simple, firma electrónica digitalizada y firma electrónica escaneada.",
+          "Firma electrónica avanzada, firma electrónica certificada y firma electrónica manuscrita."
+        ],
+        "correct_answer": "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida."
+      },
+      {
+        "question": "¿De qué será responsable el prestador de servicios de la sociedad de la información respecto a lo que se publica en el foro que administra? (2021 modelo A)   (4.3.)",
+        "answers": [
+          "De todo lo que se publica en el foro.",
+          "De todo lo se publica en el foro si lo mantiene y no tiene identificados a los que lo publican.",
+          "De lo que se publica en el foro si lo mantiene sabiendo que es contenido ilícito."
+        ],
+        "correct_answer": "De lo que se publica en el foro si lo mantiene sabiendo que es contenido ilícito."
+      },
+      {
+        "question": "A diferencia del documento nacional de identidad en soporte físico, el documento nacional de identidad electrónico: (2021 modelo A) (6.3.)",
+        "answers": [
+          "Permite firmar únicamente.",
+          "Permite identificar y firmar.",
+          "Permite identificar únicamente.",
+          "Permite identificar y autentificar."
+        ],
+        "correct_answer": "Permite identificar y autentificar."
+      },
+      {
+        "question": "Los tipos de peritos informáticos son: (2021 modelo A) (8.5.)",
+        "answers": [
+          "Telemático, implantador, forense y mantenedor.",
+          "Forense, de gestión, tasador y telemático.",
+          "Forense, implantador, telemático y auditor.",
+          "Pericial, telemático, forense e implantador."
+        ],
+        "correct_answer": "Forense, de gestión, tasador y telemático."
+      },
+      {
+        "question": "El uso del hash (algoritmo de números y letras relacionado con un archivo) en una prueba digital, se utiliza para garantizar: (2021 modelo A) (8.4.)",
+        "answers": [
+          "La parte electrónica de la prueba.",
+          "La legalidad de la prueba.",
+          "La cadena de custodia de la prueba.",
+          "El destino de la prueba."
+        ],
+        "correct_answer": "La cadena de custodia de la prueba."
+      },
+      {
+        "question": "La firma electrónica equiparable en juicio a la manuscrita es la: (2021 modelo A) (6.2.)",
+        "answers": [
+          "Firma electrónica escaneada.",
+          "Firma electrónica reconocida.",
+          "Firma electrónica avanzada.",
+          "Firma electrónica simple."
+        ],
+        "correct_answer": "Firma electrónica reconocida."
+      },
+      {
+        "question": "¿A quién puede facilitar el responsable del tratamiento los datos personales sin que se produzca una cesión de datos? (2021 modelo A)",
+        "answers": [
+          "A una administración pública.",
+          "A un encargado del tratamiento.",
+          "A un importador de datos."
+        ],
+        "correct_answer": "A un encargado del tratamiento."
+      },
+      {
+        "question": "20. El derecho sui generis: (2021 modelo A) (1.5.)",
+        "answers": [
+          "Tiene en cuenta la génesis de la base de datos.",
+          "Tiene en cuenta la creación de los contenidos incluidos en la base de datos.",
+          "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos.",
+          "Tiene en cuenta la originalidad de los contenidos incluidos en la base de datos."
+        ],
+        "correct_answer": "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos."
+      },
+      {
+        "question": "¿Dónde es un elemento esencial la tecnología, en las materias que regula el derecho? (2021 modelo B)  (1.2.)",
+        "answers": [
+          "En el derecho informático.",
+          "En las tecnologías de la sociedad de la información.",
+          "En las materias de los jueces y tribunales informáticos.",
+          "En la ley de servicios de la sociedad de la información."
+        ],
+        "correct_answer": "En el derecho informático."
+      },
+      {
+        "question": "Si se solicita un derecho de acceso: (2021 modelo B) (2.7.)",
+        "answers": [
+          "Se debe solicitar en soporte electrónico si los datos solicitados se recabaron en soporte electrónico.",
+          "Se debe solicitar en el formulario elaborado por el destinatario del derecho publicado en su página web.",
+          "No se puede solicitar ya otro derecho hasta que transcurran 12 meses o se hayan modificado los datos.",
+          "Se debe aportar un documento que acredite la identidad o representación, salvo que el destinatario ya tenga acreditada la identidad."
+        ],
+        "correct_answer": "Se debe aportar un documento que acredite la identidad o representación, salvo que el destinatario ya tenga acreditada la identidad."
+      },
+      {
+        "question": "No hace falta implantar medidas de seguridad: (2021 modelo B) (3.3.)",
+        "answers": [
+          "A los datos personales de un fichero que se almacenan en varios servidores.",
+          "A los datos personales almacenados en soporte papel.",
+          "A los datos personales que se manejan como encargado del tratamiento.",
+          "A los datos personales que no identifican o hacen identificable a una persona física."
+        ],
+        "correct_answer": "A los datos personales que no identifican o hacen identificable a una persona física."
+      },
+      {
+        "question": "4.El encargado del tratamiento no debe: (2021 modelo B) (2.4.)",
+        "answers": [
+          "Implantar medidas de seguridad a los datos personales.",
+          "Tratar datos sin cumplir la normativa de protección de datos de carácter personal.",
+          "Permitir que nadie accede a los datos personales."
+        ],
+        "correct_answer": "Tratar datos sin cumplir la normativa de protección de datos de carácter personal."
+      },
+      {
+        "question": "5.Los tipos de firma electrónica son: (2021 modelo B)",
+        "answers": [
+          "Firma electrónica escaneada, firma electrónica avanzada y firma electrónica simple.",
+          "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida.",
+          "Firma electrónica simple, firma electrónica digitalizada y firma electrónica escaneada.",
+          "Firma electrónica avanzada, firma electrónica certificada y firma electrónica manuscrita."
+        ],
+        "correct_answer": "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida."
+      },
+      {
+        "question": "6.Entre los derechos patrimoniales de la propiedad intelectual se incluyen: (2021 modelo B)",
+        "answers": [
+          "El derecho a la transmisión, sustitución y reconocimiento del autor.",
+          "El derecho de reproducción, distribución, transformación y comunicación pública.",
+          "El derecho a la subcontratación, publicación, cesión y copia.",
+          "El derecho a la modificación, coautoría, subrogación y cesión."
+        ],
+        "correct_answer": "El derecho de reproducción, distribución, transformación y comunicación pública."
+      },
+      {
+        "question": "7.El principio de transparencia debe conllevar, concretamente:  (2021 modelo B)",
+        "answers": [
+          "El tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario en relación a los fines para los que se traten.",
+          "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa."
+        ],
+        "correct_answer": "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados."
+      },
+      {
+        "question": "La propiedad intelectual recoge los derechos: (2021 modelo B)",
+        "answers": [
+          "Los derechos morales y los derechos sociales.",
+          "Los derechos morales y los derechos patrimoniales.",
+          "Los derechos personales y los derechos reales.",
+          "Los derechos patrimoniales y los derechos económicos."
+        ],
+        "correct_answer": "Los derechos morales y los derechos patrimoniales."
+      },
+      {
+        "question": "Los derechos morales del autor, en propiedad intelectual, son: (2021 modelo B)",
+        "answers": [
+          "Inalienables, subastables y comercializables.",
+          "Renunciables, transmisibles y cedibles.",
+          "Irrenunciables e inalienables.",
+          "Comercializables y cedibles."
+        ],
+        "correct_answer": "Irrenunciables e inalienables."
+      },
+      {
+        "question": "La clave pública y la clave privada son términos que se utilizan: (2021 modelo B)",
+        "answers": [
+          "Al crear ficheros firmados.",
+          "Al crear firmas electrónicas.",
+          "Al crear firmas electrónicas avanzadas.",
+          "En ninguno de los casos anteriores."
+        ],
+        "correct_answer": "Al crear firmas electrónicas."
+      },
+      {
+        "question": "¿Cuándo se entiende que hay comercio electrónico? (2021 modelo B)",
+        "answers": [
+          "Cuando la oferta y aceptación del contrato es de un producto electrónico.",
+          "Cuando la oferta y la aceptación del contrato se realiza entre una empresa y un consumidor.",
+          "Cuando la oferta y la aceptación del contrato se realiza por medio de un prestador de servicios de la sociedad de la información.",
+          "Cuando la oferta y la aceptación del contrato se transmite por medio de equipos electrónicos de tratamiento y almacenamiento de datos."
+        ],
+        "correct_answer": "Cuando la oferta y la aceptación del contrato se transmite por medio de equipos electrónicos de tratamiento y almacenamiento de datos."
+      },
+      {
+        "question": "La firma electrónica equiparable en juicio, a la manuscrita, es la: (2021 modelo B)",
+        "answers": [
+          "firma electrónica reconocida",
+          "firma electrónica avanzada",
+          "firma electrónica simple"
+        ],
+        "correct_answer": "firma electrónica reconocida"
+      },
+      {
+        "question": "¿Cuál de estos servicios sería un servicio de la sociedad de la información? (2021 modelo B)",
+        "answers": [
+          "Adquirir un dispositivo electrónico.",
+          "Un almacenamiento de información en Cloud.",
+          "Desarrollar una aplicación informática.",
+          "Instalar un lector de huella dactilar."
+        ],
+        "correct_answer": "Un almacenamiento de información en Cloud."
+      },
+      {
+        "question": "El derecho sui generis: (2021 modelo B)",
+        "answers": [
+          "Tiene en cuenta la génesis de la base de datos.",
+          "Tiene en cuenta la creación de los contenidos incluidos en la base de datos.",
+          "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos.",
+          "Tiene en cuenta la originalidad de los contenidos incluidos en la base de datos."
+        ],
+        "correct_answer": "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos."
+      },
+      {
+        "question": "Los derechos del autor de una obra perduran durante toda la vida del autor y tras su muerte, durante: (2021 modelo B)",
+        "answers": [
+          "25 años.",
+          "70 años.",
+          "100 años.",
+          "Durante el tiempo que haya determinado el autor."
+        ],
+        "correct_answer": "70 años."
+      },
+      {
+        "question": "¿Qué regula materias donde la tecnología es un elemento esencial? (2021 modelo B)",
+        "answers": [
+          "La justicia informática.",
+          "La administración informática.",
+          "El derecho informático.",
+          "La informática jurídica."
+        ],
+        "correct_answer": "El derecho informático."
+      },
+      {
+        "question": "¿Cuáles son las entidades que expiden certificados que vinculan los datos de verificación de firma con un firmante determinado? (2021 modelo B)",
+        "answers": [
+          "Los prestadores de servicios de intermediación.",
+          "Los prestadores de servicios de verificación.",
+          "Los prestadores de servicios de certificación.",
+          "Los prestadores de servicios de la sociedad de la información."
+        ],
+        "correct_answer": "Los prestadores de servicios de certificación."
+      },
+      {
+        "question": "¿Las conductas realizadas, utilizando medios electrónicos para abusar o embaucar a un menor, con el fin de obtener material de contenido pornográfico, se denomina? (2021 modelo B)",
+        "answers": [
+          "Grooming.",
+          "Phising.",
+          "Sexting.",
+          "Child Grooming."
+        ],
+        "correct_answer": "Sexting."
+      },
+      {
+        "question": "¿Qué tienen en común el phishing, el sexting y el ciberacoso? (2021 modelo B)",
+        "answers": [
+          "Que son delitos contra menores de edad.",
+          "Que son delitos de violencia de género.",
+          "Que son delitos contra las personas jurídicas.",
+          "Que son delitos informáticos."
+        ],
+        "correct_answer": "Que son delitos informáticos."
+      },
+      {
+        "question": "¿Los tipos de peritos informáticos son? (2021 modelo B)",
+        "answers": [
+          "Forense, de Gestion, Tasador y Telemático.",
+          "Forense, Implantador, Telemático y Auditor.",
+          "Pericial, Telemático, Forense e Implantador."
+        ],
+        "correct_answer": "Forense, de Gestion, Tasador y Telemático."
+      },
+      {
+        "question": "¿Cuáles son las entidades que expiden certificados que vinculan los datos de verificación de firma con un firmante determinado? (2021 modelo B)",
+        "answers": [
+          "Los prestadores de servicios de intermediación.",
+          "Los prestadores de servicios de verificación.",
+          "Los prestadores de servicios de certificación.",
+          "Los prestadores de servicios de la sociedad de la información."
+        ],
+        "correct_answer": "Los prestadores de servicios de certificación."
+      },
+      {
+        "question": "¿Las conductas realizadas, utilizando medios electrónicos para abusar o embaucar a un menor, con el fin de obtener material de contenido pornográfico, se denomina? (2021 modelo B)",
+        "answers": [
+          "Grooming.",
+          "Phising.",
+          "Sexting.",
+          "Child Grooming."
+        ],
+        "correct_answer": "Sexting."
+      },
+      {
+        "question": "¿Qué tienen en común el phishing, el sexting y el ciberacoso? (2021 modelo B)",
+        "answers": [
+          "Que son delitos contra menores de edad.",
+          "Que son delitos de violencia de género.",
+          "Que son delitos contra las personas jurídicas.",
+          "Que son delitos informáticos."
+        ],
+        "correct_answer": "Que son delitos informáticos."
+      },
+      {
+        "question": "¿Los tipos de peritos informáticos son? (2021 modelo B)",
+        "answers": [
+          "Forense, de Gestion, Tasador y Telemático.",
+          "Forense, Implantador, Telemático y Auditor.",
+          "Pericial, Telemático, Forense e Implantador."
+        ],
+        "correct_answer": "Forense, de Gestion, Tasador y Telemático."
+      },
+      {
+        "question": "El derecho informático: (2021 modelo D)",
+        "answers": [
+          "Es el derecho que utiliza la compra-venta de informática.",
+          "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+          "Es el derecho que utiliza la tecnología para ejercerse con los jueces y tribunales.",
+          "Es el derecho que regula el uso de la tecnología por los usuarios."
+        ],
+        "correct_answer": "Es el derecho que regula materias donde la tecnología es un elemento esencial."
+      },
+      {
+        "question": "La normativa de protección de datos: (2021 modelo D)",
+        "answers": [
+          "Solo se aplica a las empresas privadas.",
+          "No se aplica en las actividades exclusivamente públicas y estatales.",
+          "No se aplica en actividades exclusivamente personales y domésticas.",
+          "No se aplica a las personas mayores de edad."
+        ],
+        "correct_answer": "No se aplica en actividades exclusivamente personales y domésticas."
+      },
+      {
+        "question": "El principio de transparencia debe conllevar, concretamente: (2021 modelo D)",
+        "answers": [
+          "El tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario en relación a los fines para los que se traten.",
+          "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa."
+        ],
+        "correct_answer": "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados."
+      },
+      {
+        "question": "Una transferencia internacional o transferencia a un tercer país, desde el punto de vista del Reglamento General de Protección de Datos, se produce: (2021 modelo D)",
+        "answers": [
+          "Cuando se intercomunican servidores ubicados en varios países.",
+          "Cuando se transfieren datos personales fuera el territorio español.",
+          "Cuando se transfieren datos fuera de la Unión Europea.",
+          "Cuando se contrata un servicio de Cloud."
+        ],
+        "correct_answer": "Cuando se transfieren datos fuera de la Unión Europea."
+      },
+      {
+        "question": "¿Qué exige el principio de minimización de datos? (2021 modelo D)",
+        "answers": [
+          "Exige que los datos que se recaben sean de un tamaño mínimo.",
+          "Exige que se recaben datos útiles para el responsable del fichero.",
+          "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos.",
+          "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+        ],
+        "correct_answer": "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+      },
+      {
+        "question": "Un responsable del tratamiento es: (2021 modelo D)",
+        "answers": [
+          "La persona que decide sobre qué datos se compran y se venden de la empresa.",
+          "La persona física o jurídica que decide que datos se compran o venden de la empresa.",
+          "La persona jurídica o física que almacena los datos.",
+          "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+        ],
+        "correct_answer": "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+      },
+      {
+        "question": "Las fotografías con datos personales almacenados en el teléfono particular: (2021 modelo D)",
+        "answers": [
+          "No están sujetos a la normativa de protección de datos si son de ámbito doméstico y particular.",
+          "las fotografías con datos personales almacenados en el teléfono particular no están sujetas a la normativa de protección de datos si son de ámbito doméstico y particular, pero sí pueden estar sujetas a la normativa sobre el derecho al honor y a la intimidad, así como a la normativa sobre propiedad intelectual.",
+          "No están sujetos a la normativa sobre el derecho al honor y a la intimidad.",
+          "No están sujetos a la normativa sobre propiedad intelectual."
+        ],
+        "correct_answer": "No están sujetos a la normativa de protección de datos si son de ámbito doméstico y particular."
+      },
+      {
+        "question": "La clave pública y la clave privada son términos que se utilizan: (2021 modelo D)",
+        "answers": [
+          "Al crear ficheros firmados.",
+          "Al crear firmas electrónicas.",
+          "Al crear firmas electrónicas avanzadas.",
+          "En ninguno de los casos anteriores."
+        ],
+        "correct_answer": "Al crear firmas electrónicas."
+      },
+      {
+        "question": "¿Qué se debe cumplir en la venta a través de comercio electrónico? (2021 modelo D)",
+        "answers": [
+          "Informar del precio, características, medios de pago, gastos, envío, etc.",
+          "Suministrar el producto en un plazo de 7 días hábiles.",
+          "Ofrecer al menos tres medios de pago diferentes.",
+          "Informar al comprador de la procedencia de los productos que comprará si son importados de fuera de la Unión Europea."
+        ],
+        "correct_answer": "Informar del precio, características, medios de pago, gastos, envío, etc."
+      },
+      {
+        "question": "¿Cuándo se realiza comercio electrónico o la contratación por vía electrónica?  (2021 modelo D)",
+        "answers": [
+          "Cuando se comunican y transfieren datos por medios electrónicos.",
+          "Cuando se realiza una compra por un consumidor a distancia.",
+          "Cuando se acepta una oferta por medios electrónicos."
+        ],
+        "correct_answer": "Cuando se comunican y transfieren datos por medios electrónicos."
+      },
+      {
+        "question": "Los derechos del autor de una obra perduran durante toda la vida del autor y tras su muerte, durante: (2021 modelo D)",
+        "answers": [
+          "25 años.",
+          "70 años.",
+          "100 años.",
+          "Durante el tiempo que haya determinado el autor."
+        ],
+        "correct_answer": "70 años."
+      },
+      {
+        "question": "Los tipos de firma electrónica son: (2021 modelo D)",
+        "answers": [
+          "Firma electrónica escaneada, firma electrónica avanzada y firma electrónica simple.",
+          "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida.",
+          "Firma electrónica simple, firma electrónica digitalizada y firma electrónica escaneada.",
+          "Firma electrónica avanzada, firma electrónica certificada y firma electrónica manuscrita."
+        ],
+        "correct_answer": "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida."
+      },
+      {
+        "question": "El derecho sui generis: (2021 modelo D)",
+        "answers": [
+          "Tiene en cuenta la génesis de la base de datos.",
+          "Tiene en cuenta la creación de los contenidos incluidos en la base de datos.",
+          "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos.",
+          "Tiene en cuenta la originalidad de los contenidos incluidos en la base de datos."
+        ],
+        "correct_answer": "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos."
+      },
+      {
+        "question": "La firma electrónica equiparable en juicio a la manuscrita es la: (2021 modelo D)",
+        "answers": [
+          "Firma electrónica escaneada.",
+          "Firma electrónica reconocida.",
+          "Firma electrónica avanzada.",
+          "Firma electrónica simple."
+        ],
+        "correct_answer": "Firma electrónica reconocida."
+      },
+      {
+        "question": "¿Qué contrato de software requiere más condiciones, regulación y detalles? (2021 modelo D)",
+        "answers": [
+          "El contrato para la realización de un software libre.",
+          "El contrato de desarrollo a medida.",
+          "El contrato de software estándar.",
+          "Dependerá del número de usuarios que utilicen el software."
+        ],
+        "correct_answer": "El contrato de desarrollo a medida."
+      },
+      {
+        "question": "Las firmas electrónicas: (2021 modelo D)",
+        "answers": [
+          "Pueden utilizarse por personas físicas.",
+          "Pueden utilizarse por personas físicas y personas jurídicas.",
+          "Pueden utilizarse por personas físicas, personas jurídicas y administración pública."
+        ],
+        "correct_answer": "Pueden utilizarse por personas físicas, personas jurídicas y administración pública."
+      },
+      {
+        "question": "La propiedad intelectual recoge los derechos: (2021 modelo D)",
+        "answers": [
+          "Los derechos morales y los derechos sociales.",
+          "Los derechos morales y los derechos patrimoniales.",
+          "Los derechos personales y los derechos reales.",
+          "Los derechos patrimoniales y los derechos económicos."
+        ],
+        "correct_answer": "Los derechos morales y los derechos patrimoniales."
+      },
+      {
+        "question": "La inscripción en el Registro de la Propiedad Intelectual de algún software o aplicación informática que se realice: (2021 modelo D)",
+        "answers": [
+          "Es necesario para obtener los derechos de propiedad intelectual.",
+          "Es voluntario e independiente a obtener los derechos de propiedad intelectual.",
+          "Es obligatorio solo si se quiere obtener los derechos de explotación no los derechos de autor."
+        ],
+        "correct_answer": "Es voluntario e independiente a obtener los derechos de propiedad intelectual."
+      },
+      {
+        "question": "Para demostrar y probar la comisión de un delito informático: (2021 modelo D)",
+        "answers": [
+          "Deben presentarse las pruebas anonimizadas y cifradas.",
+          "Deben presentar pruebas electrónicas de los dispositivos del denunciado.",
+          "Hay libertad para presentar pruebas electrónicas y no electrónicas.",
+          "Hay libertad para denunciar, pero se debe disponer y presentar el dispositivo electrónico del denunciado."
+        ],
+        "correct_answer": "Hay libertad para presentar pruebas electrónicas y no electrónicas."
+      },
+      {
+        "question": "¿Qué tienen en común el phishing, el sexting y el ciberacoso? (2021 modelo D)",
+        "answers": [
+          "Que son delitos contra menores de edad.",
+          "Que son delitos de violencia de género.",
+          "Que son delitos contra las personas jurídicas.",
+          "Que son delitos informáticos."
+        ],
+        "correct_answer": "Que son delitos informáticos."
+      },
+      {
+        "question": "¿Qué es el derecho informático? (2022 modelo A)",
+        "answers": [
+          "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+          "Es la rama del derecho que trata los asuntos generados por empresas informáticas.",
+          "Es el derecho que se realiza con medios informáticos.",
+          "Es el tipo de derecho de las nuevas tecnologías: robótica, inteligencia artificial, blockchain, etc."
+        ],
+        "correct_answer": "Es el derecho que regula materias donde la tecnología es un elemento esencial."
+      },
+      {
+        "question": "2. El derecho al olvido es: (2022 modelo A)",
+        "answers": [
+          "La obligación de que se olviden los datos de alguien.",
+          "El derecho a que el interesado olvide sus propios datos.",
+          "El derecho a que se supriman los datos o los enlaces a los datos.",
+          "El derecho a que se olviden los datos obsoletos."
+        ],
+        "correct_answer": "El derecho a que se supriman los datos o los enlaces a los datos."
+      },
+      {
+        "question": "3. A la hora de realizar una venta de un producto por medios electrónicos: (2022 modelo A)",
+        "answers": [
+          "La información previa se facilita en el idioma del vendedor y del comprador.",
+          "Hay que facilitar información previa en soporte/archivo descargable.",
+          "No hay que facilitar la información previa si se realiza a través de correos electrónicos y es entre empresas.",
+          "Hay que facilitar la información previa cuando lo solicite el comprador."
+        ],
+        "correct_answer": "Hay que facilitar información previa en soporte/archivo descargable."
+      },
+      {
+        "question": "4. Contratar un servicio de almacenamiento en la nube, de la base de datos personales: (2022 modelo A)",
+        "answers": [
+          "Supone una cesión de datos al prestador del servicio.",
+          "Supone una nueva responsabilidad de los datos para el prestador del servicio.",
+          "Supone un alquiler de la base de datos.",
+          "Supone un encargo del tratamiento."
+        ],
+        "correct_answer": "Supone un encargo del tratamiento."
+      },
+      {
+        "question": "5. ¿Qué exige el principio de minimización de datos? (2022 modelo A)",
+        "answers": [
+          "Exige que se recaben datos útiles para el responsable del fichero.",
+          "Exige que los datos recabados sean los necesarios para el uso que se les va a dar.",
+          "Exige que los datos que se recaben sean de un tamaño mínimo.",
+          "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos."
+        ],
+        "correct_answer": "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+      },
+      {
+        "question": "6. Cuando se otorga la posibilidad de manejar el software sin adquirir más derechos que los de la reproducción y ejecución del software, nos referimos a: (2022 modelo A)",
+        "answers": [
+          "Transmisión de software.",
+          "Cesión de derechos de software.",
+          "Cesión de derechos de comercialización del software.",
+          "Licencia de derechos de uso de software."
+        ],
+        "correct_answer": "Licencia de derechos de uso de software."
+      },
+      {
+        "question": "7. ¿Qué contrato de software requiere más condiciones, regulación y detalles? (2022 modelo A)",
+        "answers": [
+          "Dependerá del número de usuarios que utilicen el software.",
+          "El contrato de software estándar.",
+          "El contrato para la realización de un software libre.",
+          "El contrato de desarrollo a medida."
+        ],
+        "correct_answer": "El contrato de desarrollo a medida."
+      },
+      {
+        "question": "8. ¿Qué se debe cumplir en la venta a través de comercio electrónico? (2022 modelo A)",
+        "answers": [
+          "Suministrar el producto en un plazo de 7 días hábiles.",
+          "Ofrecer al menos tres medios de pago diferentes.",
+          "Informar del precio, características, medios de pago, gastos, envío.",
+          "Informar al comprador de la procedencia de los productos que comprará si son importados de fuera de la Unión Europea."
+        ],
+        "correct_answer": "Informar del precio, características, medios de pago, gastos, envío."
+      },
+      {
+        "question": "9. ¿Las conductas realizadas, utilizando medios electrónicos para abusar o embaucar a un menor, con el fin de obtener material de contenido pornográfico se denomina? (2022 modelo A)",
+        "answers": [
+          "Sexting.",
+          "Grooming.",
+          "Child Grooming.",
+          "Phising."
+        ],
+        "correct_answer": "Grooming."
+      },
+      {
+        "question": "10. El principio de transparencia debe conllevar, concretamente: (2022 modelo A)",
+        "answers": [
+          "Organización clara y estructurada de los datos personales en los sistemas informáticos.",
+          "El tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario en relación a los fines para los que se traten.",
+          "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa."
+        ],
+        "correct_answer": "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados."
+      },
+      {
+        "question": "11. En la profesión del profesional informático, el profesional se verá obligado a cumplir: (2022 modelo A)",
+        "answers": [
+          "La ética constructiva.",
+          "El secreto profesional y la confidencialidad.",
+          "El compromiso de las relaciones con sus iguales.",
+          "Las conductas restrictivas."
+        ],
+        "correct_answer": "El secreto profesional y la confidencialidad."
+      },
+      {
+        "question": "12. ¿Cuál de ests servicios sería un servicio de la sociedad de la información? (2022 modelo A)",
+        "answers": [
+          "Instalar un lector de huella dactilar.",
+          "Administrar y mantener un dispositivo electrónico.",
+          "Desarrollar una aplicación informática.",
+          "Un almacenamiento de información en Cloud."
+        ],
+        "correct_answer": "Un almacenamiento de información en Cloud."
+      },
+      {
+        "question": "13. ¿El Reglamento General de Protección de Datos es una norma? (2022 modelo A)",
+        "answers": [
+          "Que se debe trasponer con una ley al no tener efectos directos.",
+          "Que es un marco de referencia para luego incluirlo en las normas nacionales.",
+          "Que tiene efectos directos y no debe trasponerse, mediante ninguna ley nacional.",
+          "Que es de efectos directos si no contradice una norma nacional."
+        ],
+        "correct_answer": "Que tiene efectos directos y no debe trasponerse, mediante ninguna ley nacional."
+      },
+      {
+        "question": "14. ¿Los tipos de firma electrónica son? (2022 modelo A)",
+        "answers": [
+          "Firma electrónica escaneada, firma electrónica avanzada y firma electrónica simple.",
+          "Firma electrónica simple, firma electrónica digitalizada y firma electrónica escaneada.",
+          "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida.",
+          "Firma electrónica avanzada, firma electrónica certificada y firma electrónica manuscrita."
+        ],
+        "correct_answer": "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida."
+      },
+      {
+        "question": "15. ¿Quién tiene derecho de desistimiento en el comercio electrónico? (2022 modelo A)",
+        "answers": [
+          "El comprador, si el vendedor lo ofrece.",
+          "El comprador, excepto para determinados productos.",
+          "Cualquiera, cuando el producto es importado.",
+          "Los consumidores que lo hayan contratado."
+        ],
+        "correct_answer": "El comprador, excepto para determinados productos."
+      },
+      {
+        "question": "16. La responsabilidad del profesional informático, por las actuaciones y relaciones empresariales, puede ser: (2022 modelo A)",
+        "answers": [
+          "Responsabilidad medioambiental y extracomunitaria.",
+          "Responsabilidad social y departamental.",
+          "Responsabilidad civil contractual y extracontractual.",
+          "Responsabilidad ética y social."
+        ],
+        "correct_answer": "Responsabilidad civil contractual y extracontractual."
+      },
+      {
+        "question": "17. ¿Quién tiene derecho de desistimiento en el comercio electrónico? (2022 modelo A)",
+        "answers": [
+          "El comprador, si el vendedor lo ofrece.",
+          "Cualquiera, cuando el producto es importado.",
+          "El comprador, excepto para determinados productos.",
+          "Los consumidores que lo hayan contratado."
+        ],
+        "correct_answer": "El comprador, excepto para determinados productos."
+      },
+      {
+        "question": "18. El encargado del tratamiento: (2022 modelo A)",
+        "answers": [
+          "Es quien decide quién será el responsable del tratamiento.",
+          "Es quien decide sobre la finalidad del tratamiento.",
+          "Es quien trata los datos por cuenta del responsable del tratamiento.",
+          "Es quien indica al responsable del tratamiento para que se tratan los datos."
+        ],
+        "correct_answer": "Es quien trata los datos por cuenta del responsable del tratamiento."
+      },
+      {
+        "question": "19. La propiedad intelectual recoge los derechos: (2022 modelo A)",
+        "answers": [
+          "Los derechos morales y los derechos sociales.",
+          "Los derechos morales y los derechos sociales.",
+          "Los derechos morales y los derechos patrimoniales.",
+          "Los derechos personales y los derechos reales."
+        ],
+        "correct_answer": "Los derechos morales y los derechos patrimoniales."
+      },
+      {
+        "question": "20. El derecho sui generis: (2022 modelo A)",
+        "answers": [
+          "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos.",
+          "Tiene en cuenta la génesis de la base de datos.",
+          "Tiene en cuenta la creación de los contenidos incluidos en la base de datos.",
+          "Tiene en cuenta la originalidad de los contenidos incluidos en la base de datos."
+        ],
+        "correct_answer": "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos."
+      },
+      {
+        "question": ". El derecho informático: (2023 modelo A)",
+        "answers": [
+          "Es el derecho que utiliza la compra-venta de informática.",
+          "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+          "Es el derecho que regula el uso de la tecnología por los usuarios.",
+          "Es el derecho que utiliza la tecnología para ejercerse con los jueces y tribunales."
+        ],
+        "correct_answer": "Es el derecho que regula materias donde la tecnología es un elemento esencial."
+      },
+      {
+        "question": "2. ¿De las siguientes definiciones cuál se corresponde con la de derecho de las nuevas tecnologías? (2023 modelo A)",
+        "answers": [
+          "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico.",
+          "La normativa que regula las relaciones de las nuevas profesiones.",
+          "El uso de la tecnología en la gestión de la justicia.",
+          "Todas las anteriores."
+        ],
+        "correct_answer": "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico."
+      },
+      {
+        "question": "3. El principio de transparencia debe conllevar, concretamente: (2023 modelo A)",
+        "answers": [
+          "Organización clara y estructurada de los datos personales en los sistemas informáticos.",
+          "El tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario en relación a los fines para los que se traten.",
+          "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa."
+        ],
+        "correct_answer": "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados."
+      },
+      {
+        "question": "El consentimiento es un requisito para poder tratar los datos personales: (2023 modelo A)",
+        "answers": [
+          "Siempre que los datos sean de personas físicas identificadas o identificables.",
+          "Siempre que los datos se traten de forma automatizada.",
+          "Siempre que no haya otra base jurídica o de licitud para tratar los datos.",
+          "Siempre que se traten datos de personas físicas y no jurídicas."
+        ],
+        "correct_answer": "Siempre que no haya otra base jurídica o de licitud para tratar los datos."
+      },
+      {
+        "question": "5. Un dato personal incluido en un documento en papel: (2023 modelo A)",
+        "answers": [
+          "Está sujeto a la normativa como otro dato personal cualquiera.",
+          "Está sujeto a la normativa de protección de datos personales sólo si se graba en soporte lógico.",
+          "No está sujeto a la normativa de protección de datos personales.",
+          "Se puede tratar sin consentimiento porque está grabado en papel."
+        ],
+        "correct_answer": "Está sujeto a la normativa como otro dato personal cualquiera."
+      },
+      {
+        "question": "6. El encargado del tratamiento: (2023 modelo A)",
+        "answers": [
+          "Es quien decide quién será el responsable del tratamiento.",
+          "Es quien decide sobre la finalidad del tratamiento.",
+          "Es quien trata los datos por cuenta del responsable del tratamiento.",
+          "Es quien indica al responsable del tratamiento para que se tratan los datos."
+        ],
+        "correct_answer": "Es quien trata los datos por cuenta del responsable del tratamiento."
+      },
+      {
+        "question": "7. ¿Cuándo se entiende que hay comercio electrónico? (2023 modelo A)",
+        "answers": [
+          "Cuando la oferta y aceptación del contrato es de un producto electrónico.",
+          "Cuando la oferta y la aceptación del contrato se transmite por medio de equipos electrónicos de tratamiento y almacenamiento de datos.",
+          "Cuando la oferta y la aceptación del contrato se realiza entre una empresa y un consumidor.",
+          "Cuando la oferta y la aceptación del contrato se realiza por medio de un prestador de servicios de la sociedad de la información."
+        ],
+        "correct_answer": "Cuando la oferta y la aceptación del contrato se transmite por medio de equipos electrónicos de tratamiento y almacenamiento de datos."
+      },
+      {
+        "question": "8. A diferencia del Documento Nacional de Identidad en soporte físico, el Documento Nacional de Identidad Electrónico: (2023 modelo A)",
+        "answers": [
+          "Permite firmar únicamente.",
+          "Permite identificar y firmar.",
+          "Permite identificar únicamente.",
+          "Permite identificar y autentificar."
+        ],
+        "correct_answer": "Permite identificar y autentificar."
+      },
+      {
+        "question": "9. Una comunicación comercial por medios electrónicos es una comunicación promocional, directa o indirecta, de la imagen o bienes/servicios. (2023 modelo A)",
+        "answers": [
+          "Realizada por medio de SMS.",
+          "Realizada por medio de correos electrónicos.",
+          "Realizada por sistemas de mensajeria (Whatsapp, Telegram, etc).",
+          "Todas las opciones anteriores son correctas."
+        ],
+        "correct_answer": "Todas las opciones anteriores son correctas."
+      },
+      {
+        "question": "La firma electrónica equiparable en juicio a la manuscrita es la: (2023 modelo A)",
+        "answers": [
+          "Firma electrónica reconocida.",
+          "Firma electrónica avanzada.",
+          "Firma electrónica escaneada.",
+          "Firma electrónica simple."
+        ],
+        "correct_answer": "Firma electrónica reconocida."
+      },
+      {
+        "question": "11. La propiedad intelectual recoge los derechos: (2023 modelo A)",
+        "answers": [
+          "Los derechos morales y los derechos sociales.",
+          "Los derechos morales y los derechos sociales.",
+          "Los derechos morales y los derechos patrimoniales.",
+          "Los derechos personales y los derechos reales."
+        ],
+        "correct_answer": "Los derechos morales y los derechos patrimoniales."
+      },
+      {
+        "question": "12. ¿Cuáles son las entidades que expiden certificados electrónicos que vinculan los datos de verificación de firma con un firmante determinado? (2023 modelo A)",
+        "answers": [
+          "Los prestadores de servicios de intermediación.",
+          "Los prestadores de servicios de certificación.",
+          "Los prestadores de servicios de verificación.",
+          "Los prestadores de servicios de la sociedad de la información."
+        ],
+        "correct_answer": "Los prestadores de servicios de certificación."
+      },
+      {
+        "question": "13. Si se solicita un derecho de acceso: (2023 modelo A)",
+        "answers": [
+          "Se debe aportar un documento que acredite la identidad o representación, salvo que el destinatario ya tenga acreditada la identidad.",
+          "Se debe solicitar en soporte electrónico si los datos solicitados se recabaron en soporte electrónico.",
+          "Se debe solicitar en el formulario elaborado por el destinatario del derecho publicado en su página web.",
+          "No se puede solicitar ya otro derecho hasta que transcurran 12 meses o se hayan modificado los datos."
+        ],
+        "correct_answer": "Se debe aportar un documento que acredite la identidad o representación, salvo que el destinatario ya tenga acreditada la identidad."
+      },
+      {
+        "question": "14. ¿Qué contrato de software requiere más condiciones, regulación y detalles? (2023 modelo A)",
+        "answers": [
+          "Dependerá del número de usuarios que utilicen el software.",
+          "El contrato de software estándar.",
+          "El contrato para la realización de un software libre.",
+          "El contrato de desarrollo a medida."
+        ],
+        "correct_answer": "El contrato de desarrollo a medida."
+      },
+      {
+        "question": "15. El derecho sui generis en materia de propiedad intelectual: (2023 modelo A)",
+        "answers": [
+          "Tiene en cuenta la génesis de la base de datos.",
+          "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos.",
+          "Tiene en cuenta la creación de los contenidos incluidos en la base de datos.",
+          "Tiene en cuenta la originalidad de los contenidos incluidos en la base de datos."
+        ],
+        "correct_answer": "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos."
+      },
+      {
+        "question": ". Para demostrar o probar que se ha cometido un delito informático: (2023 modelo A)",
+        "answers": [
+          "Hay libertad para denunciar, pero se debe disponer y presentar el dispositivo electrónico del denunciado.",
+          "Deben presentar pruebas electrónicas de los dispositivos del denunciado.",
+          "Hay libertad para presentar pruebas electrónicas y no electrónicas.",
+          "Deben presentarse las pruebas anonimizadas y cifradas."
+        ],
+        "correct_answer": "Hay libertad para presentar pruebas electrónicas y no electrónicas."
+      },
+      {
+        "question": "17. La propiedad intelectual es un derecho que se obtiene: (2023 modelo A)",
+        "answers": [
+          "Cuando obtenemos el certificado de la obra registrada.",
+          "Cuando hemos registrado la obra en el registro de propiedad intelectual.",
+          "Cuando la obra ha sido comercializada.",
+          "Cuando la obra se ha creado."
+        ],
+        "correct_answer": "Cuando la obra se ha creado."
+      },
+      {
+        "question": "18. El uso del hash o algoritmo de números y letras relacionado con un archivo, en una prueba digital, se utiliza para garantizar: (2023 modelo A)",
+        "answers": [
+          "El destino de la prueba.",
+          "La cadena de legalidad de la prueba.",
+          "La legalidad de la prueba.",
+          "La cadena de custodia de la prueba."
+        ],
+        "correct_answer": "La cadena de custodia de la prueba."
+      },
+      {
+        "question": "19. A la hora de realizar una venta de un producto por medios electrónicos: (2023 modelo A)",
+        "answers": [
+          "La información previa se facilita en el idioma del vendedor y del comprador.",
+          "Hay que facilitar información previa en soporte/archivo descargable.",
+          "No hay que facilitar la información previa si se realiza a través de correos electrónicos y es entre empresas.",
+          "Hay que facilitar la información previa cuando lo solicite el comprador."
+        ],
+        "correct_answer": "Hay que facilitar información previa en soporte/archivo descargable."
+      },
+      {
+        "question": "20. Una transferencia internacional o transferencia a un tercer país, desde el punto de vista del Reglamento General de Protección de Datos, se produce: (2023 modelo A)",
+        "answers": [
+          "Cuando se intercomunican servidores ubicados en varios países.",
+          "Cuando se transfieren datos fuera de la Unión Europea.",
+          "Cuando se transfieren datos personales fuera el territorio español.",
+          "Cuando se contrata un servicio de Cloud."
+        ],
+        "correct_answer": "Cuando se transfieren datos fuera de la Unión Europea."
+      },
+      {
+        "question": ". ¿El principio de minimización en el tratamiento de datos personales? (2024 modelo A)",
+        "answers": [
+          "Exige que los datos recabados sean los necesarios para el uso que se les va a dar.",
+          "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos.",
+          "Exige que se recaben datos útiles para el responsable del fichero.",
+          "Exige que los datos que se recaben sean de un tamaño mínimo."
+        ],
+        "correct_answer": "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+      },
+      {
+        "question": "2. En relación con la información previa, en la venta de productos por medios electrónicos: (2024 modelo A)",
+        "answers": [
+          "Hay que facilitar información previa en soporte/archivo descargable.",
+          "Hay que facilitar la información previa cuando lo solicite el comprador.",
+          "Hay que facilitar la información previa en el idioma del vendedor y del comprador.",
+          "No hay que facilitar la información previa si se realiza, la venta, a través de correos electrónicos y es entre empresas."
+        ],
+        "correct_answer": "Hay que facilitar información previa en soporte/archivo descargable."
+      },
+      {
+        "question": "3. Los derechos del autor de una obra perduran durante toda la vida del autor y tras su muerte, durante: (2024 modelo A)",
+        "answers": [
+          "El tiempo que haya determinado el autor.",
+          "25 años.",
+          "70 años.",
+          "100 años."
+        ],
+        "correct_answer": "70 años."
+      },
+      {
+        "question": "4. ¿Se pueden enviar comunicaciones comerciales a través del correo electrónico (emailings)? (2024 modelo A)",
+        "answers": [
+          "Si las direcciones de email las hemos recabado de páginas web.",
+          "Si se cuenta con el consentimiento o existe una relación contractual.",
+          "Si las direcciones de email son de cuentas gratuitas (Gmail, Yahoo, Outlook, etc.).",
+          "Si las direcciones de email son de empresas."
+        ],
+        "correct_answer": "Si se cuenta con el consentimiento o existe una relación contractual."
+      },
+      {
+        "question": "El derecho informático: (2024 modelo A)",
+        "answers": [
+          "Es el derecho que utiliza la compra-venta de informática.",
+          "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+          "Es el derecho que regula el uso de la tecnología por los usuarios.",
+          "Es el derecho que utiliza la tecnología para ejercerse con los jueces y tribunales."
+        ],
+        "correct_answer": "Es el derecho que regula materias donde la tecnología es un elemento esencial."
+      },
+      {
+        "question": "6. A diferencia del documento nacional de identidad en soporte físico, el documento nacional de identidad electrónico: (2024 modelo A)",
+        "answers": [
+          "Permite identificar y firmar.",
+          "Permite identificar únicamente.",
+          "Permite firmar únicamente.",
+          "Permite identificar y autentificar."
+        ],
+        "correct_answer": "Permite identificar y autentificar."
+      },
+      {
+        "question": "7. La firma electrónica escaneada: (2024 modelo A)",
+        "answers": [
+          "No tiene efectos jurídicos.",
+          "No se puede manipular.",
+          "No tiene efectos salvo que lo reconozcan terceros de confianza.",
+          "No se le niegan efectos jurídicos."
+        ],
+        "correct_answer": "No se le niegan efectos jurídicos."
+      },
+      {
+        "question": "8. ¿Qué exige el principio de minimización de datos? (2024 modelo A)",
+        "answers": [
+          "Exige que se recaben datos útiles para el responsable del fichero.",
+          "Exige que los datos recabados sean los necesarios para el uso que se les va a dar.",
+          "Exige que los datos que se recaben sean de un tamaño mínimo.",
+          "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos."
+        ],
+        "correct_answer": "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+      },
+      {
+        "question": "9. Los derechos morales del autor, en propiedad intelectual, son: (2024 modelo A)",
+        "answers": [
+          "Irrenunciables e inalienables.",
+          "Inalienables, subastables y comercializables.",
+          "Renunciables, transmisibles y cedibles.",
+          "Comercializables y cedibles."
+        ],
+        "correct_answer": "Irrenunciables e inalienables."
+      },
+      {
+        "question": "10. El uso del hash (algoritmo de números y letras relacionado con un archivo) en una prueba digital, se utiliza para garantizar: (2024 modelo A)",
+        "answers": [
+          "La cadena de legalidad de la prueba.",
+          "La legalidad de la prueba.",
+          "La cadena de custodia de la prueba.",
+          "El destino de la prueba."
+        ],
+        "correct_answer": "La cadena de custodia de la prueba."
+      },
+      {
+        "question": "¿Dónde es un elemento esencial la tecnología, en las materias que regula el derecho? (2024 modelo B)",
+        "answers": [
+          "En las tecnologías de la sociedad de la información",
+          "En la ley de servicios de la sociedad de la información.",
+          "En el derecho informático.",
+          "En las materias de los jueces y tribunales informáticos."
+        ],
+        "correct_answer": "En el derecho informático."
+      },
+      {
+        "question": "2. Un dato personal grabado en un documento en papel: (2024 modelo B)",
+        "answers": [
+          "Se puede tratar sin consentimiento porque está grabado en papel.",
+          "Está sujeto a la normativa de protección de datos personales sólo si se graba en soporte lógico.",
+          "Está sujeto a la normativa como otro dato personal cualquiera.",
+          "No está sujeto a la normativa de protección de datos personales."
+        ],
+        "correct_answer": "Está sujeto a la normativa como otro dato personal cualquiera."
+      },
+      {
+        "question": "3. El encargado del tratamiento no debe: (2024 modelo B)",
+        "answers": [
+          "Implantar medidas de seguridad a los datos personales.",
+          "Transferir datos a otros países.",
+          "Permitir que nadie accede a los datos personales.",
+          "Tratar datos para un fin distinto al indicado por el responsable del tratamiento."
+        ],
+        "correct_answer": "Tratar datos para un fin distinto al indicado por el responsable del tratamiento."
+      },
+      {
+        "question": "4. ¿El derecho de desistimiento en el comercio electrónico, quién puede solicitarlo? (2024 modelo B)",
+        "answers": [
+          "Los consumidores que lo hayan contratado.",
+          "El comprador, si el vendedor lo ofrece.",
+          "El comprador, excepto para determinados productos.",
+          "Cualquiera, cuando el producto es importado."
+        ],
+        "correct_answer": "El comprador, excepto para determinados productos."
+      },
+      {
+        "question": ". ¿De qué será responsable el prestador de servicios de la sociedad de la información respecto a lo que se publica en el foro que administra? (2024 modelo B)",
+        "answers": [
+          "De todo lo que se publica en el foro.",
+          "De lo que se publica en el foro si lo mantiene sabiendo que es contenido ilícito.",
+          "De todo lo se publica en el foro si lo mantiene y no tiene identificados a los que lo publican.",
+          "De lo que se publica en el foro por usuarios no identificados."
+        ],
+        "correct_answer": "De lo que se publica en el foro si lo mantiene sabiendo que es contenido ilícito."
+      },
+      {
+        "question": "6. ¿Cuál de las siguientes firmas electrónicas sería equiparable en juicio a la firma manuscrita? (2024 modelo B)",
+        "answers": [
+          "Firma electrónica escaneada.",
+          "Firma electrónica reconocida.",
+          "Firma electrónica avanzada.",
+          "Firma electrónica simple."
+        ],
+        "correct_answer": "Firma electrónica reconocida."
+      },
+      {
+        "question": "7. La firma electrónica escaneada: (2024 modelo B)",
+        "answers": [
+          "No tiene efectos jurídicos.",
+          "No se puede manipular.",
+          "No tiene efectos salvo que lo reconozcan terceros de confianza.",
+          "No se le niegan efectos jurídicos."
+        ],
+        "correct_answer": "No se le niegan efectos jurídicos."
+      },
+      {
+        "question": "8. En el derecho sui generis sobre bases de datos se protege: (2024 modelo B)",
+        "answers": [
+          "El esfuerzo invertido en tiempo y dinero para crear la base de datos.",
+          "El esfuerzo invertido en tiempo y dinero para crear los contenidos de la base de datos.",
+          "La originalidad de la base de datos.",
+          "La originalidad de su contenido."
+        ],
+        "correct_answer": "El esfuerzo invertido en tiempo y dinero para crear la base de datos."
+      },
+      {
+        "question": "9. Cuando un profesional de la informática desempeña su trabajo se verá muchas veces obligado a: (2024 modelo B)",
+        "answers": [
+          "Las conductas restrictivas.",
+          "La ética constructiva.",
+          "El secreto profesional y la confidencialidad.",
+          "El compromiso de las relaciones con sus iguales."
+        ],
+        "correct_answer": "El secreto profesional y la confidencialidad."
+      },
+      {
+        "question": "10. Los tipos de peritos informáticos son: (2024 modelo B)",
+        "answers": [
+          "Forense, implantador, telemático y auditor.",
+          "Telemático,implantador,forenseymantenedor.",
+          "Forense, de gestión, tasador y telemático.",
+          "Pericial, telemático, forense e implantador."
+        ],
+        "correct_answer": "Forense, de gestión, tasador y telemático."
+      },
+      {
+        "question": ". ¿Cuál de las siguientes definiciones se corresponde con la de derecho de las nuevas tecnologías? (2024 modelo C)",
+        "answers": [
+          "La normativa que regula las relaciones de las nuevas profesiones.",
+          "El uso de la tecnología en la gestión de la justicia.",
+          "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico.",
+          "Todas las anteriores."
+        ],
+        "correct_answer": "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico."
+      },
+      {
+        "question": "2. Un responsable del tratamiento es: (2024 modelo C)",
+        "answers": [
+          "La persona que decide sobre qué datos se compran y se venden de la empresa.",
+          "La persona jurídica o física que almacena los datos.",
+          "La persona jurídica o física que decide sobre los fines y los medios del tratamiento.",
+          "La persona física o jurídica que decide que datos se compran o venden de la empresa."
+        ],
+        "correct_answer": "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+      },
+      {
+        "question": "3. El principio que obliga a solicitar sólo los datos necesarios para la finalidad perseguida es el: (2024 modelo C)",
+        "answers": [
+          "Principio de consentimiento.",
+          "Principio de seguridad.",
+          "Principio de información.",
+          "Principio de minimización de datos."
+        ],
+        "correct_answer": "Principio de minimización de datos."
+      },
+      {
+        "question": "4. ¿ A qué tipo de datos no se le aplicaría la normativa sobre protección de datos personales? (2024 modelo C)",
+        "answers": [
+          "A los datos que no identifican o hacen identificable a una persona física.",
+          "A los datos almacenados en soporte papel.",
+          "A los datos de un fichero que se almacenan en varios servidores.",
+          "A los datos que se manejan por más de un proveedor."
+        ],
+        "correct_answer": "A los datos que no identifican o hacen identificable a una persona física."
+      },
+      {
+        "question": "¿Quién tiene derecho a solicitar el desistimiento en el comercio electrónico? (2024 modelo C)",
+        "answers": [
+          "Cualquiera, cuando el producto es importado.",
+          "Los consumidores que lo hayan contratado.",
+          "El comprador, si el vendedor lo ofrece.",
+          "El comprador, excepto para determinados productos."
+        ],
+        "correct_answer": "El comprador, excepto para determinados productos."
+      },
+      {
+        "question": "6. Una comunicación comercial por medios electrónicos se considera que es una comunicación promocional, directa o indirecta, de la imagen o bienes/servicios: (2024 modelo C)",
+        "answers": [
+          "Todas las opciones siguientes son correctas.",
+          "La realizada por sistemas de mensajeria (Whatsapp, Telegram, etc).",
+          "La realizada por medio de SMS.",
+          "La realizada por medio de correos electrónicos."
+        ],
+        "correct_answer": "Todas las opciones siguientes son correctas."
+      },
+      {
+        "question": "7. ¿Los tipos de firma electrónica son? (2024 modelo C)",
+        "answers": [
+          "Firma electrónica escaneada, firma electrónica avanzada y firma electrónica simple.",
+          "Firma electrónica simple, firma electrónica digitalizada y firma electrónica escaneada.",
+          "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida.",
+          "Firma electrónica avanzada, firma electrónica certificada y firma electrónica manuscrita."
+        ],
+        "correct_answer": "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida."
+      },
+      {
+        "question": "8. En la profesión del profesional informático, el profesional se verá obligado a cumplir: (2024 modelo C)",
+        "answers": [
+          "La ética constructiva.",
+          "El secreto profesional y la confidencialidad.",
+          "El compromiso de las relaciones con sus iguales.",
+          "Las conductas restrictivas."
+        ],
+        "correct_answer": "El secreto profesional y la confidencialidad."
+      },
+      {
+        "question": "9. La protección de las obras con la propiedad intelectual: (2024 modelo C)",
+        "answers": [
+          "Perdura el tiempo que dura el soporte donde se plasma la obra.",
+          "Perdura el tiempo que dura la obra.",
+          "Tiene un plazo de duración con respecto a la obra.",
+          "Tiene un plazo de duración con respecto al autor."
+        ],
+        "correct_answer": "Tiene un plazo de duración con respecto al autor."
+      },
+      {
+        "question": "10. ¿Las conductas realizadas, utilizando medios electrónicos para abusar o embaucar a un menor, con el fin de obtener material de contenido pornográfico se denomina? (2024 modelo C)",
+        "answers": [
+          "Sexting.",
+          "Grooming.",
+          "Child Grooming.",
+          "Phising."
+        ],
+        "correct_answer": "Grooming."
+      },
+      {
+        "question": "¿Cuál de las siguientes definiciones se corresponde con la de derecho de las nuevas tecnologías?",
+        "answers": [
+          "El uso de la tecnología en la gestión de la justicia.",
+          "La normativa que regula los vínculos internos y externos de la innovación con la sociedad.",
+          "La normativa que regula las relaciones de las nuevas profesiones.",
+          "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico."
+        ],
+        "correct_answer": "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico."
+      },
+      {
+        "question": "En la actividad del profesional informático, éste se verá obligado a cumplir:",
+        "answers": [
+          "Las conductas restrictivas.",
+          "La ética constructiva.",
+          "El secreto profesional y la confidencialidad.",
+          "El compromiso de las relaciones con sus iguales."
+        ],
+        "correct_answer": "El secreto profesional y la confidencialidad."
+      },
+      {
+        "question": "El derecho informático:",
+        "answers": [
+          "Es el derecho que utiliza la compra-venta de informática.",
+          "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+          "Es el derecho que utiliza la tecnología para ejercerse con los jueces y tribunales.",
+          "Es el derecho que regula el uso de la tecnología por los usuarios."
+        ],
+        "correct_answer": "Es el derecho que regula materias donde la tecnología es un elemento esencial."
+      },
+      {
+        "question": "¿Qué es el derecho informático?",
+        "answers": [
+          "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+          "Es la rama del derecho que trata los asuntos generados por empresas informáticas.",
+          "Es el derecho que se realiza con medios informáticos.",
+          "Es el tipo de derecho de las nuevas tecnologías: robótica, inteligencia artificial, blockchain, etc."
+        ],
+        "correct_answer": "Es el derecho que regula materias donde la tecnología es un elemento esencial."
+      },
+      {
+        "question": "¿De las siguientes definiciones cuál se corresponde con la de derecho de las nuevas tecnologías?",
+        "answers": [
+          "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico.",
+          "La normativa que regula las relaciones de las nuevas profesiones.",
+          "El uso de la tecnología en la gestión de la justicia.",
+          "Todas las anteriores."
+        ],
+        "correct_answer": "La normativa que regula las nuevas realidades sociales en las que impera el factor tecnológico."
+      },
+      {
+        "question": "La responsabilidad del profesional informático, por las actuaciones y relaciones empresariales, puede ser:",
+        "answers": [
+          "Responsabilidad civil contractual y extracontractual.",
+          "Responsabilidad medioambiental y extracomunitaria.",
+          "Responsabilidad social y departamental.",
+          "Responsabilidad ética y social."
+        ],
+        "correct_answer": "Responsabilidad civil contractual y extracontractual."
+      },
+      {
+        "question": "En la profesión del profesional informático, el profesional se verá obligado a cumplir:",
+        "answers": [
+          "La ética constructiva.",
+          "El secreto profesional y la confidencialidad.",
+          "El compromiso de las relaciones con sus iguales.",
+          "Las conductas restrictivas."
+        ],
+        "correct_answer": "El secreto profesional y la confidencialidad."
+      },
+      {
+        "question": "¿Dónde es un elemento esencial la tecnología, en las materias que regula el derecho?",
+        "answers": [
+          "En el derecho informático.",
+          "En las tecnologías de la sociedad de la información.",
+          "En las materias de los jueces y tribunales informáticos.",
+          "En la ley de servicios de la sociedad de la información."
+        ],
+        "correct_answer": "En el derecho informático."
+      },
+      {
+        "question": "¿Qué regula materias donde la tecnología es un elemento esencial?",
+        "answers": [
+          "La justicia informática.",
+          "La administración informática.",
+          "El derecho informático.",
+          "La informática jurídica."
+        ],
+        "correct_answer": "El derecho informático."
+      },
+      {
+        "question": "Un responsable del tratamiento es:",
+        "answers": [
+          "La persona que decide sobre qué datos se compran y se venden de la empresa.",
+          "La persona física o jurídica que decide que datos se compran o venden de la empresa.",
+          "La persona jurídica o física que almacena los datos.",
+          "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+        ],
+        "correct_answer": "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+      },
+      {
+        "question": "Un responsable del tratamiento, según la normativo de protección de datos personales, es:",
+        "answers": [
+          "La persona física o jurídica que decide que datos se compran o venden de la empresa.",
+          "La persona jurídica o física que almacena los datos.",
+          "La persona que decide sobre qué datos se compran y se venden de la empresa.",
+          "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+        ],
+        "correct_answer": "La persona jurídica o física que decide sobre los fines y los medios del tratamiento."
+      },
+      {
+        "question": "El encargado del tratamiento no debe:",
+        "answers": [
+          "Implantar medidas de seguridad a los datos personales.",
+          "Tratar datos sin cumplir la normativa de protección de datos de carácter personal.",
+          "Permitir que nadie accede a los datos personales."
+        ],
+        "correct_answer": "Tratar datos sin cumplir la normativa de protección de datos de carácter personal."
+      },
+      {
+        "question": "El encargado del tratamiento:",
+        "answers": [
+          "Es quien decide quién será el responsable del tratamiento.",
+          "Es quien decide sobre la finalidad del tratamiento.",
+          "Es quien trata los datos por cuenta del responsable del tratamiento.",
+          "Es quien indica al responsable del tratamiento para que se tratan los datos."
+        ],
+        "correct_answer": "Es quien trata los datos por cuenta del responsable del tratamiento."
+      },
+      {
+        "question": "Los datos personales no automatizados:",
+        "answers": [
+          "No están sujetos a la normativa de protección de datos.",
+          "No pueden tratarse de forma automatizada por tanto no son del ámbito del RGPD.",
+          "No deben estar protegidos al no estar automatizados.",
+          "Ninguna de las anteriores es correcta."
+        ],
+        "correct_answer": "Ninguna de las anteriores es correcta."
+      },
+      {
+        "question": "Un dato personal incluido en un documento en papel:",
+        "answers": [
+          "Está sujeto a la normativa de protección de datos personales sólo si se graba en soporte lógico.",
+          "No está sujeto a la normativa de protección de datos personales.",
+          "Está sujeto a la normativa como otro dato personal cualquiera.",
+          "Se puede tratar sin consentimiento porque está grabado en papel."
+        ],
+        "correct_answer": "Está sujeto a la normativa como otro dato personal cualquiera."
+      },
+      {
+        "question": "El principio de transparencia debe conllevar, concretamente:",
+        "answers": [
+          "Organización clara y estructurada de los datos personales en los sistemas informáticos.",
+          "El tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario en relación a los fines para los que se traten.",
+          "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa."
+        ],
+        "correct_answer": "Políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados."
+      },
+      {
+        "question": "El principio de minimización de datos debe ser entendido como:",
+        "answers": [
+          "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa como el tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario",
+          "En relación a los fines para los que se traten",
+          "Aquel consistente en que el responsable del fichero debe tener políticas de transparencia de protección de datos"
+        ],
+        "correct_answer": "Un deber de diligencia por parte del responsable del fichero en el cumplimiento de la normativa como el tratamiento de los datos personales adecuados, pertinentes y limitados al mínimo necesario"
+      },
+      {
+        "question": "¿Qué exige el principio de minimización de datos?",
+        "answers": [
+          "Exige que los datos que se recaben sean de un tamaño mínimo.",
+          "Exige que se recaben datos útiles para el responsable del fichero.",
+          "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos.",
+          "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+        ],
+        "correct_answer": "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+      },
+      {
+        "question": "El derecho al olvido es:",
+        "answers": [
+          "La obligación de que se olviden los datos de alguien.",
+          "El derecho a que el interesado olvide sus propios datos.",
+          "El derecho a que se supriman los datos o los enlaces a los datos.",
+          "El derecho a que se olviden los datos obsoletos."
+        ],
+        "correct_answer": "El derecho a que se supriman los datos o los enlaces a los datos."
+      },
+      {
+        "question": "¿Cuál se debe informar al interesado cuando se recaban los datos personales de un tercero?",
+        "answers": [
+          "Informar al interesado en el plazo máximo de un mes.",
+          "Informar al interesado en el plazo máximo de 10 días.",
+          "Informar en cualquier momento."
+        ],
+        "correct_answer": "Informar al interesado en el plazo máximo de un mes."
+      },
+      {
+        "question": "¿A quién puede facilitar el responsable del tratamiento los datos personales sin que se produzca una cesión de datos?",
+        "answers": [
+          "A una administración pública.",
+          "A un encargado del tratamiento.",
+          "A un importador de datos."
+        ],
+        "correct_answer": "A un encargado del tratamiento."
+      },
+      {
+        "question": "Si se solicita un derecho de acceso:",
+        "answers": [
+          "Se debe solicitar en soporte electrónico si los datos solicitados se recabaron en soporte electrónico.",
+          "Se debe solicitar en el formulario elaborado por el destinatario del derecho publicado en su página web.",
+          "No se puede solicitar ya otro derecho hasta que transcurran 12 meses o se hayan modificado los datos.",
+          "Se debe aportar un documento que acredite la identidad o representación, salvo que el destinatario ya tenga acreditada la identidad."
+        ],
+        "correct_answer": "Se debe aportar un documento que acredite la identidad o representación, salvo que el destinatario ya tenga acreditada la identidad."
+      },
+      {
+        "question": "No hace falta implantar medidas de seguridad:",
+        "answers": [
+          "A los datos personales de un fichero que se almacenan en varios servidores.",
+          "A los datos personales almacenados en soporte papel.",
+          "A los datos personales que se manejan como encargado del tratamiento.",
+          "A los datos personales que no identifican o hacen identificable a una persona física."
+        ],
+        "correct_answer": "A los datos personales que no identifican o hacen identificable a una persona física."
+      },
+      {
+        "question": "La normativa de protección de datos:",
+        "answers": [
+          "Solo se aplica a las empresas privadas.",
+          "No se aplica en las actividades exclusivamente públicas y estatales.",
+          "No se aplica en actividades exclusivamente personales y domésticas.",
+          "No se aplica a las personas mayores de edad."
+        ],
+        "correct_answer": "No se aplica en actividades exclusivamente personales y domésticas."
+      },
+      {
+        "question": "Una transferencia internacional o transferencia a un tercer país, desde el punto de vista del Reglamento General de Protección de Datos, se produce:",
+        "answers": [
+          "Cuando se intercomunican servidores ubicados en varios países.",
+          "Cuando se transfieren datos personales fuera el territorio español.",
+          "Cuando se transfieren datos fuera de la Unión Europea.",
+          "Cuando se contrata un servicio de Cloud"
+        ],
+        "correct_answer": "Cuando se transfieren datos fuera de la Unión Europea."
+      },
+      {
+        "question": "Las fotografías con datos personales almacenados en el teléfono particular:",
+        "answers": [
+          "No están sujetas a la normativa sobre los servicios de la sociedad de la información.",
+          "No están sujetos a la normativa sobre propiedad intelectual.",
+          "No están sujetos a la normativa sobre el derecho al honor y a la intimidad.",
+          "No están sujetos a la normativa de protección de datos si son de ámbito doméstico y particular."
+        ],
+        "correct_answer": "No están sujetos a la normativa de protección de datos si son de ámbito doméstico y particular."
+      },
+      {
+        "question": "¿El Reglamento General de Protección de Datos es una norma?",
+        "answers": [
+          "Que se debe trasponer con una ley al no tener efectos directos.",
+          "Que es un marco de referencia para luego incluirlo en las normas nacionales.",
+          "Que tiene efectos directos y no debe trasponerse, mediante ninguna ley nacional.",
+          "Que es de efectos directos si no contradice una norma nacional."
+        ],
+        "correct_answer": "Que tiene efectos directos y no debe trasponerse, mediante ninguna ley nacional."
+      },
+      {
+        "question": "El consentimiento es un requisito para poder tratar los datos personales:",
+        "answers": [
+          "Siempre que los datos sean de personas físicas identificadas o identificables.",
+          "Siempre que los datos se traten de forma automatizada.",
+          "Siempre que no haya otra base jurídica o de licitud para tratar los datos.",
+          "Siempre que se traten datos de personas físicas y no jurídicas."
+        ],
+        "correct_answer": "Siempre que no haya otra base jurídica o de licitud para tratar los datos."
+      },
+      {
+        "question": "Contratar un servicio de almacenamiento en la nube, de la base de datos personales:",
+        "answers": [
+          "Supone una cesión de datos al prestador del servicio.",
+          "Supone una nueva responsabilidad de los datos para el prestador del servicio.",
+          "Supone un alquiler de la base de datos.",
+          "Supone un encargo del tratamiento."
+        ],
+        "correct_answer": "Supone un encargo del tratamiento."
+      },
+      {
+        "question": "¿Quién tiene derecho de desistimiento en el comercio electrónico?",
+        "answers": [
+          "El comprador, excepto para determinados productos.",
+          "El comprador, si el vendedor lo ofrece.",
+          "Cualquiera, cuando el producto es importado.",
+          "Los consumidores que lo hayan contratado."
+        ],
+        "correct_answer": "El comprador, excepto para determinados productos."
+      },
+      {
+        "question": "¿Cuándo se entiende que hay comercio electrónico?",
+        "answers": [
+          "Cuando la oferta y aceptación del contrato es de un producto electrónico.",
+          "Cuando la oferta y la aceptación del contrato se realiza entre una empresa y un consumidor.",
+          "Cuando la oferta y la aceptación del contrato se realiza por medio de un prestador de servicios de la sociedad de la información.",
+          "Cuando la oferta y la aceptación del contrato se transmite por medio de equipos electrónicos de tratamiento y almacenamiento de datos"
+        ],
+        "correct_answer": "Cuando la oferta y la aceptación del contrato se transmite por medio de equipos electrónicos de tratamiento y almacenamiento de datos"
+      },
+      {
+        "question": "¿Qué se debe cumplir en la venta a través de comercio electrónico?",
+        "answers": [
+          "Informar del precio, características, medios de pago, gastos, envío, etc.",
+          "Suministrar el producto en un plazo de 7 días hábiles.",
+          "Ofrecer al menos tres medios de pago diferentes.",
+          "Informar al comprador de la procedencia de los productos que comprará si son importados de fuera de la Unión Europea"
+        ],
+        "correct_answer": "Informar del precio, características, medios de pago, gastos, envío, etc."
+      },
+      {
+        "question": "¿Cuándo se realiza comercio electrónico o la contratación por vía electrónica?",
+        "answers": [
+          "Cuando se comunican y transfieren datos por medios electrónicos",
+          "Cuando se realiza una compra por un consumidor a distancia.",
+          "Cuando se acepta una oferta por medios electrónicos."
+        ],
+        "correct_answer": "Cuando se comunican y transfieren datos por medios electrónicos"
+      },
+      {
+        "question": "¿De qué será responsable el prestador de servicios de la sociedad de la información respecto a lo que se publica en el foro que administra?",
+        "answers": [
+          "De todo lo que se publica en el foro.",
+          "De todo lo que se publica en el foro si lo mantiene y no tiene identificados a los que lo publican.",
+          "De lo que se publica en el foro si lo mantiene sabiendo que es contenido ilícito."
+        ],
+        "correct_answer": "De lo que se publica en el foro si lo mantiene sabiendo que es contenido ilícito."
+      },
+      {
+        "question": "¿Cuál de estos servicios sería un servicio de la sociedad de la información?",
+        "answers": [
+          "Adquirir un dispositivo electrónico.",
+          "Un almacenamiento de información en Cloud.",
+          "Desarrollar una aplicación informática.",
+          "Instalar un lector de huella dactilar."
+        ],
+        "correct_answer": "Un almacenamiento de información en Cloud."
+      },
+      {
+        "question": "A la hora de realizar una venta de un producto por medios electrónicos:",
+        "answers": [
+          "La información previa se facilita en el idioma del vendedor y del comprador.",
+          "Hay que facilitar información previa en soporte/archivo descargable.",
+          "No hay que facilitar la información previa si se realiza a través de correos electrónicos y es entre empresas.",
+          "Hay que facilitar la información previa cuando lo solicite el comprador."
+        ],
+        "correct_answer": "Hay que facilitar información previa en soporte/archivo descargable."
+      },
+      {
+        "question": "Una comunicación comercial por medios electrónicos es una comunicación promocional, directa o indirecta, de la imagen o bienes/servicios.",
+        "answers": [
+          "Realizada por medio de SMS.",
+          "Realizada por medio de correos electrónicos.",
+          "Realizada por sistemas de mensajeria (Whatsapp, Telegram, etc).",
+          "Todas las opciones anteriores son correctas."
+        ],
+        "correct_answer": "Todas las opciones anteriores son correctas."
+      },
+      {
+        "question": "¿Se pueden enviar comunicaciones comerciales a través del correo electrónico (emailings)?",
+        "answers": [
+          "Si las direcciones de email las hemos recabado de páginas web.",
+          "Si se cuenta con el consentimiento o existe una relación contractual.",
+          "Si las direcciones de email son de cuentas gratuitas (Gmail, Yahoo, Outlook, etc.).",
+          "Si las direcciones de email son de empresas."
+        ],
+        "correct_answer": "Si se cuenta con el consentimiento o existe una relación contractual."
+      },
+      {
+        "question": "Los tipos de firma electrónica son:",
+        "answers": [
+          "Firma electrónica escaneada, firma electrónica avanzada y firma electrónica simple.",
+          "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida.",
+          "Firma electrónica simple, firma electrónica digitalizada y firma electrónica escaneada.",
+          "Firma electrónica avanzada, firma electrónica certificada y firma electrónica manuscrita."
+        ],
+        "correct_answer": "Firma electrónica simple, firma electrónica avanzada y firma electrónica reconocida."
+      },
+      {
+        "question": "A diferencia del documento nacional de identidad en soporte físico, el documento nacional de identidad electrónico:",
+        "answers": [
+          "Permite firmar únicamente.",
+          "Permite identificar y firmar.",
+          "Permite identificar únicamente.",
+          "Permite identificar y autentificar."
+        ],
+        "correct_answer": "Permite identificar y autentificar."
+      },
+      {
+        "question": "La firma electrónica equiparable en juicio a la manuscrita es la:",
+        "answers": [
+          "Firma electrónica escaneada.",
+          "Firma electrónica reconocida.",
+          "Firma electrónica avanzada.",
+          "Firma electrónica simple."
+        ],
+        "correct_answer": "Firma electrónica reconocida."
+      },
+      {
+        "question": "Las firmas electrónicas:",
+        "answers": [
+          "Pueden utilizarse por personas físicas, personas jurídicas y administración pública.",
+          "Pueden utilizarse por personas físicas.",
+          "Pueden utilizarse por personas físicas y personas jurídicas.",
+          "Pueden utilizarse por personas jurídicas."
+        ],
+        "correct_answer": "Pueden utilizarse por personas físicas, personas jurídicas y administración pública."
+      },
+      {
+        "question": "¿Cuáles son las entidades que expiden certificados que vinculan los datos de verificación de firma con un firmante determinado?",
+        "answers": [
+          "Los prestadores de servicios de intermediación.",
+          "Los prestadores de servicios de verificación.",
+          "Los prestadores de servicios de certificación.",
+          "Los prestadores de servicios de la sociedad de la información."
+        ],
+        "correct_answer": "Los prestadores de servicios de certificación."
+      },
+      {
+        "question": "La clave pública y la clave privada son términos que se utilizan:",
+        "answers": [
+          "Al crear ficheros firmados.",
+          "Al crear firmas electrónicas avanzadas.",
+          "Al crear firmas electrónicas.",
+          "En ninguno de los casos anteriores."
+        ],
+        "correct_answer": "Al crear firmas electrónicas."
+      },
+      {
+        "question": "Entre los derechos patrimoniales de la propiedad intelectual se incluyen:",
+        "answers": [
+          "El derecho a la transmisión, sustitución y reconocimiento del autor.",
+          "El derecho de reproducción, distribución, transformación y comunicación pública.",
+          "El derecho a la subcontratación, publicación, cesión y copia.",
+          "El derecho a la modificación, coautoría, subrogación y cesión."
+        ],
+        "correct_answer": "El derecho de reproducción, distribución, transformación y comunicación pública."
+      },
+      {
+        "question": "La propiedad intelectual recoge los derechos:",
+        "answers": [
+          "Los derechos morales y los derechos sociales.",
+          "Los derechos morales y los derechos patrimoniales.",
+          "Los derechos personales y los derechos reales.",
+          "Los derechos patrimoniales y los derechos económicos."
+        ],
+        "correct_answer": "Los derechos morales y los derechos patrimoniales."
+      },
+      {
+        "question": "La propiedad intelectual es un derecho que se obtiene:",
+        "answers": [
+          "Cuando obtenemos el certificado de la obra registrada.",
+          "Cuando hemos registrado la obra en el registro de propiedad intelectual.",
+          "Cuando la obra ha sido comercializada.",
+          "Cuando la obra se ha creado."
+        ],
+        "correct_answer": "Cuando la obra se ha creado."
+      },
+      {
+        "question": "Los derechos morales del autor, en propiedad intelectual, son:",
+        "answers": [
+          "Inalienables, subastables y comercializables.",
+          "Renunciables, transmisibles y cedibles.",
+          "Irrenunciables e inalienables.",
+          "Comercializables y cedibles."
+        ],
+        "correct_answer": "Irrenunciables e inalienables."
+      },
+      {
+        "question": "Los derechos del autor de una obra perduran durante toda la vida del autor y tras su muerte, durante:",
+        "answers": [
+          "25 años.",
+          "70 años.",
+          "100 años.",
+          "Durante el tiempo que haya determinado el autor."
+        ],
+        "correct_answer": "70 años."
+      },
+      {
+        "question": "¿Qué contrato de software requiere más condiciones, regulación y detalles?",
+        "answers": [
+          "El contrato para la realización de un software libre.",
+          "El contrato de desarrollo a medida.",
+          "El contrato de software estándar.",
+          "Dependerá del número de usuarios que utilicen el software."
+        ],
+        "correct_answer": "El contrato de desarrollo a medida."
+      },
+      {
+        "question": "El software libre o free software:",
+        "answers": [
+          "No significa que sea software gratuito.",
+          "No significa que sea software sin autor.",
+          "Significa que es software gratuito.",
+          "Significa que es software abierto."
+        ],
+        "correct_answer": "No significa que sea software gratuito."
+      },
+      {
+        "question": "La inscripción en el Registro de la Propiedad Intelectual de algún software o aplicación informática que se realice:",
+        "answers": [
+          "Es necesario para obtener los derechos de propiedad intelectual.",
+          "Es voluntario e independiente a obtener los derechos de propiedad intelectual.",
+          "Es obligatorio solo si se quiere obtener los derechos de explotación no los derechos de autor."
+        ],
+        "correct_answer": "Es voluntario e independiente a obtener los derechos de propiedad intelectual."
+      },
+      {
+        "question": "El derecho sui generis:",
+        "answers": [
+          "Tiene en cuenta la génesis de la base de datos.",
+          "Tiene en cuenta la creación de los contenidos incluidos en la base de datos.",
+          "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos.",
+          "Tiene en cuenta la originalidad de los contenidos incluidos en la base de datos."
+        ],
+        "correct_answer": "Tiene en cuenta el esfuerzo de la estructuración y recopilación de los contenidos de la base de datos."
+      },
+      {
+        "question": "En el derecho sui generis, relativo a la propiedad intelectual de las bases de datos, se protege",
+        "answers": [
+          "La originalidad de la base de datos.",
+          "La originalidad de su contenido.",
+          "El esfuerzo invertido en tiempo y dinero para crear los contenidos de la base de datos.",
+          "El esfuerzo invertido en tiempo y dinero para crear la base de datos."
+        ],
+        "correct_answer": "El esfuerzo invertido en tiempo y dinero para crear la base de datos."
+      },
+      {
+        "question": "Cuando se otorga la posibilidad de manejar el software sin adquirir más derechos que los de la reproducción y ejecución del software, nos referimos a:",
+        "answers": [
+          "Transmisión de software.",
+          "Cesión de derechos de software.",
+          "Cesión de derechos de comercialización del software.",
+          "Licencia de derechos de uso de software."
+        ],
+        "correct_answer": "Licencia de derechos de uso de software."
+      },
+      {
+        "question": "Los tipos de peritos informáticos son:",
+        "answers": [
+          "Telemático, implantador, forense y mantenedor.",
+          "Forense, de gestión, tasador y telemático.",
+          "Forense, implantador, telemático y auditor.",
+          "Pericial, telemático, forense e implantador."
+        ],
+        "correct_answer": "Forense, de gestión, tasador y telemático."
+      },
+      {
+        "question": "El uso del hash (algoritmo de números y letras relacionado con un archivo) en una prueba digital, se utiliza para garantizar:",
+        "answers": [
+          "La parte electrónica de la prueba.",
+          "La legalidad de la prueba.",
+          "La cadena de custodia de la prueba.",
+          "El destino de la prueba."
+        ],
+        "correct_answer": "La cadena de custodia de la prueba."
+      },
+      {
+        "question": "¿Las conductas realizadas, utilizando medios electrónicos para abusar o embaucar a un menor, con el fin de obtener material de contenido pornográfico, se denomina?",
+        "answers": [
+          "Grooming.",
+          "Phising.",
+          "Sexting.",
+          "Child Grooming."
+        ],
+        "correct_answer": "Grooming."
+      },
+      {
+        "question": "¿Qué tienen en común el phishing, el sexting y el ciberacoso?",
+        "answers": [
+          "Que son delitos contra menores de edad.",
+          "Que son delitos de violencia de género.",
+          "Que son delitos informáticos.",
+          "Que son delitos contra las personas jurídicas."
+        ],
+        "correct_answer": "Que son delitos informáticos."
+      },
+      {
+        "question": "1. ¿El principio de minimización en el tratamiento de datos personales?",
+        "answers": [
+          "Exige que los datos recabados sean los necesarios para el uso que se les va a dar.",
+          "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos.",
+          "Exige que se recaben datos útiles para el responsable del fichero.",
+          "Exige que los datos que se recaben sean de un tamaño mínimo."
+        ],
+        "correct_answer": "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+      },
+      {
+        "question": "2. En relación con la información previa, en la venta de productos por medios electrónicos:",
+        "answers": [
+          "Hay que facilitar información previa en soporte/archivo descargable.",
+          "Hay que facilitar la información previa cuando lo solicite el comprador.",
+          "Hay que facilitar la información previa en el idioma del vendedor y del comprador.",
+          "No hay que facilitar la información previa si se realiza, la venta, a través de correos electrónicos y es entre empresas."
+        ],
+        "correct_answer": "Hay que facilitar información previa en soporte/archivo descargable."
+      },
+      {
+        "question": "3. Los derechos del autor de una obra perduran durante toda la vida del autor y tras su muerte, durante:",
+        "answers": [
+          "El tiempo que haya determinado el autor.",
+          "25 años.",
+          "70 años.",
+          "100 años."
+        ],
+        "correct_answer": "70 años."
+      },
+      {
+        "question": "4. ¿Se pueden enviar comunicaciones comerciales a través del correo electrónico (emailings)?",
+        "answers": [
+          "Si las direcciones de email las hemos recabado de páginas web.",
+          "Si se cuenta con el consentimiento o existe una relación contractual.",
+          "Si las direcciones de email son de cuentas gratuitas (Gmail, Yahoo, Outlook, etc.).",
+          "Si las direcciones de email son de empresas."
+        ],
+        "correct_answer": "Si se cuenta con el consentimiento o existe una relación contractual."
+      },
+      {
+        "question": "5. El derecho informático:",
+        "answers": [
+          "Es el derecho que utiliza la compra-venta de informática.",
+          "Es el derecho que regula materias donde la tecnología es un elemento esencial.",
+          "Es el derecho que regula el uso de la tecnología por los usuarios.",
+          "Es el derecho que utiliza la tecnología para ejercerse con los jueces y tribunales."
+        ],
+        "correct_answer": "Es el derecho que regula materias donde la tecnología es un elemento esencial."
+      },
+      {
+        "question": "6. A diferencia del documento nacional de identidad en soporte físico, el documento nacional de identidad electrónico:",
+        "answers": [
+          "Permite identificar y firmar.",
+          "Permite identificar únicamente.",
+          "Permite firmar únicamente.",
+          "Permite identificar y autentificar."
+        ],
+        "correct_answer": "Permite identificar y autentificar."
+      },
+      {
+        "question": "7. La firma electrónica escaneada:",
+        "answers": [
+          "No tiene efectos jurídicos.",
+          "No se puede manipular.",
+          "No tiene efectos salvo que lo reconozcan terceros de confianza.",
+          "No se le niegan efectos jurídicos."
+        ],
+        "correct_answer": "No se le niegan efectos jurídicos."
+      },
+      {
+        "question": "8. ¿Qué exige el principio de minimización de datos?",
+        "answers": [
+          "Exige que se recaben datos útiles para el responsable del fichero.",
+          "Exige que los datos recabados sean los necesarios para el uso que se les va a dar.",
+          "Exige que los datos que se recaben sean de un tamaño mínimo.",
+          "Exige que los datos recabados sean de personas que hayan consentido que se traten sus datos."
+        ],
+        "correct_answer": "Exige que los datos recabados sean los necesarios para el uso que se les va a dar."
+      },
+      {
+        "question": "9. Los derechos morales del autor, en propiedad intelectual, son:",
+        "answers": [
+          "Irrenunciables e inalienables.",
+          "Inalienables, subastables y comercializables.",
+          "Renunciables, transmisibles y cedibles.",
+          "Comercializables y cedibles."
+        ],
+        "correct_answer": "Irrenunciables e inalienables."
+      },
+      {
+        "question": "10. El uso del hash (algoritmo de números y letras relacionado con un archivo) en una prueba digital, se utiliza para garantizar:",
+        "answers": [
+          "La cadena de legalidad de la prueba.",
+          "La legalidad de la prueba.",
+          "La cadena de custodia de la prueba.",
+          "El destino de la prueba."
+        ],
+        "correct_answer": "La cadena de custodia de la prueba."
+      },
+      {
+        "question": "Para demostrar y probar la comisión de un delito informático:",
+        "answers": [
+          "Deben presentarse las pruebas anonimizadas y cifradas.",
+          "Deben presentar pruebas electrónicas de los dispositivos del denunciado.",
+          "Hay libertad para presentar pruebas electrónicas y no electrónicas.",
+          "Hay libertad para denunciar, pero se debe disponer y presentar el dispositivo electrónico del denunciado."
+        ],
+        "correct_answer": "Hay libertad para presentar pruebas electrónicas y no electrónicas."
+      },
+      {
+        "question": "Para demostrar o probar que se ha cometido un delito informático:",
+        "answers": [
+          "Hay libertad para denunciar, pero se debe disponer y presentar el dispositivo electrónico del denunciado.",
+          "Deben presentar pruebas electrónicas de los dispositivos del denunciado.",
+          "Hay libertad para presentar pruebas electrónicas y no electrónicas.",
+          "Deben presentarse las pruebas anonimizadas y cifradas."
+        ],
+        "correct_answer": "Hay libertad para presentar pruebas electrónicas y no electrónicas."
+      },
+      {
+        "question": "¿Cuál es el secreto relativo a la técnica de los procedimientos de producción?",
+        "answers": [
+          "Secreto de empresa.",
+          "Secreto patrimonial.",
+          "Secreto productivo.",
+          "Secreto Industrial."
+        ],
+        "correct_answer": "Secreto Industrial."
+      },
+      {
+        "question": "¿Qué se requiere para tratar los datos personales de menores de 18 años? (2021 modelo A)",
+        "answers": [
+          "No se pueden tratar los datos personales de menores de 18 años.",
+          "Se requiere el consentimiento de sus padres para los menores de 14 años.",
+          "Se requiere el consentimiento del menor de 18 años y mayor de 14 años.",
+          "Los dos anteriores (2 y 3) son correctos."
+        ],
+        "correct_answer": "Los dos anteriores (2 y 3) son correctos."
+      },
+      {
+        "question": "Un contrato electrónico celebrado entre una persona física y una empresa, se entiende celebrado: (2021 modelo A) (Tema 5)",
+        "answers": [
+          "En el domicilio de la empresa.",
+          "En el domicilio de la persona física.",
+          "En ninguno de los 2 anteriores.",
+          "En el domicilio del transportista.",
+          "En donde se establezca por la empresa."
+        ],
+        "correct_answer": "En el domicilio de la persona física."
+      },
+      {
+        "question": "¿Cómo se denomina el derecho en propiedad intectual, que protege la inversión sustancial, evaluada cualitativa o cuantitativamente, que realiza su fabricante, en una base de datos? (2022 modelo C)",
+        "answers": [
+          "Derechos de explotación.",
+          "Derechos de autor.",
+          "Derechos patrimoniales.",
+          "Derechos sui generis."
+        ],
+        "correct_answer": "Derechos sui generis."
+      },
+      {
+        "question": "¿Qué entiendes por un servicio de intermediación? (2022 modelo B) (Tema 4)",
+        "answers": [
+          "El servicio prestado por un responsable que intermedia en la recogida de los datos personales.",
+          "El servicio prestado por el notario en la relación entre las partes.",
+          "Una operación electrónica donde interviene un intermediario a la hora de contratar el servicio o producto.",
+          "Un servicio de la sociedad de la información por el que se presta otro servicio de la sociedad de la información."
+        ],
+        "correct_answer": "Un servicio de la sociedad de la información por el que se presta otro servicio de la sociedad de la información."
+      },
+      {
+        "question": "Un elemento fundamental en el ámbito de los delitos contra la propiedad intelectual es: (2021 modelo A) (Tema 7)",
+        "answers": [
+          "el ánimo de lucro",
+          "la imprudencia o negligencia",
+          "ninguno de los anteriores"
+        ],
+        "correct_answer": "el ánimo de lucro"
+      },
+      {
+        "question": "Indica cuál de las siguientes afirmaciones es errónea: (Tema 5)",
+        "answers": [
+          "Para recabar el consentimiento para el envío de comunicaciones comerciales es necesario un opt-in en todo caso.",
+          "Para recabar el consentimiento para el envío de comunicaciones comerciales por medios electrónicos es necesario un opt-in.",
+          "Para recabar el consentimiento para el envío de comunicaciones comerciales por medios ordinarios es suficiente un opt-out.",
+          "Para recabar el consentimiento para el envío de comunicaciones comerciales por medios electrónicos es necesario recabar el consentimiento expreso y previo del destinatario."
+        ],
+        "correct_answer": "Para recabar el consentimiento para el envío de comunicaciones comerciales es necesario un opt-in en todo caso."
+      },
+      {
+        "question": "El encargado del tratamiento no debe: (2022 modelo C)",
+        "answers": [
+          "Implantar medidas de seguridad a los datos personales.",
+          "Transferir datos a otros países.",
+          "Permitir que nadie accede a los datos personales.",
+          "Tratar datos para un fin distinto al indicado por el responsable del tratamiento."
+        ],
+        "correct_answer": "Tratar datos para un fin distinto al indicado por el responsable del tratamiento."
+      },
+      {
+        "question": "En cuanto al principio de transparencia de la normativa sobre protección de datos, a la hora de cumplirlo se debe tener en cuenta: (2024 modelo F)",
+        "answers": [
+          "Que debe existir un deber de diligencia del responsable del tratamiento.",
+          "Que se deben facilitar políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados.",
+          "Que se debe mantener de forma clara y estructurada los datos personales en los sistemas informáticos.",
+          "Que los datos se deben mantener de forma adecuada y pertinente en el sistema donde se almacenan."
+        ],
+        "correct_answer": "Que se deben facilitar políticas transparentes que deben ser fácilmente accesibles y descriptivas del tratamiento de datos personales y del ejercicio de los derechos de los interesados."
+      },
+      {
+        "question": "El servicio de la sociedad de la información de comercio electrónico de material deportivo: (2022 modelo C) (Tema 4)",
+        "answers": [
+          "No requiere ninguna autorización para prestarse.",
+          "Requiere autorización administrativa pero no civil.",
+          "Debe autorizarse por el organismo pertinente.",
+          "Se debe prestar por una entidad certificada en servicios de la sociedad de la información."
+        ],
+        "correct_answer": "No requiere ninguna autorización para prestarse."
+      },
+      {
+        "question": "La responsabilidad proactiva: (2022 modelo B)",
+        "answers": [
+          "Es una medida de control de la información.",
+          "Es un derecho de las personas.",
+          "Es una acción de protección de los sistemas automatizados.",
+          "Es un principio de protección de datos."
+        ],
+        "correct_answer": "Es un principio de protección de datos."
+      },
+      {
+        "question": "Una obra colectiva, en cuanto a los derechos de propiedad intelectual: (2022 modelo B)",
+        "answers": [
+          "Otorga derechos a quien la edite y divulgue.",
+          "Otorga derechos a quienes hayan suscrito el contrato de gestión de derechos de la obra.",
+          "Otorga siempre derechos a todos los partícipes, independientemente de quien la edite y divulgue.",
+          "Otorga derechos de autor a todos y patrimoniales a los que más aporten"
+        ],
+        "correct_answer": "Otorga derechos a quien la edite y divulgue."
+      },
+      {
+        "question": "¿ A qué tipo de datos no se le aplicaría la normativa sobre protección de datos personales? (2024 modelo C)",
+        "answers": [
+          "A los datos que no identifican o hacen identificable a una persona física.",
+          "A los datos almacenados en soporte papel.",
+          "A los datos de un fichero que se almacenan en varios servidores.",
+          "A los datos que se manejan por más de un proveedor."
+        ],
+        "correct_answer": "A los datos que no identifican o hacen identificable a una persona física."
+      }
+    ]
+  }
