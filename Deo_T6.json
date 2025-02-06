@@ -1,0 +1,105 @@
+{
+  "asignatura": "Deontología",
+  "questions": [
+    {
+      "question": "¿Cuál de las siguientes afirmaciones es correcta en relación con la firma electrónica?",
+      "answers": [
+        "La firma electrónica es una novedad tecnológica pendiente de regular en España.",
+        "La firma electrónica es un medio para identificar a las personas en soportes electrónicos.",
+        "La firma electrónica se regula en la Ley Orgánica 1/1999.",
+        "B y C son correctas."
+      ],
+      "correct_answer": "La firma electrónica es un medio para identificar a las personas en soportes electrónicos."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones es correcta conforme a la normativa que regula la firma electrónica?",
+      "answers": [
+        "La firma electrónica puede equivaler a la firma manuscrita.",
+        "La firma electrónica no se puede utilizar para identificar a un firmante sin su consentimiento pues sería una infracción de la normativa de protección de datos.",
+        "La firma electrónica siempre incluye una firma manual escaneada.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct_answer": "La firma electrónica puede equivaler a la firma manuscrita."
+    },
+    {
+      "question": "¿Cuál de los siguientes tipos de firma electrónica equivale a la firma manual?",
+      "answers": [
+        "La firma electrónica simple (por ejemplo, una firma manual escaneada).",
+        "La firma electrónica avanzada.",
+        "La firma electrónica cualificada.",
+        "No existe equivalencia entre la firma manual y la firma electrónica."
+      ],
+      "correct_answer": "La firma electrónica cualificada."
+    },
+    {
+      "question": "Señala cuál de las siguientes afirmaciones es correcta:",
+      "answers": [
+        "Solo las personas físicas pueden actuar como firmantes ya que en el caso de las personas jurídicas el firmante siempre sería una persona física.",
+        "Solo las personas jurídicas pueden tener una firma electrónica.",
+        "Tanto las personas físicas como las jurídicas pueden actuar como firmantes.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct_answer": "Tanto las personas físicas como las jurídicas pueden actuar como firmantes."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones respecto de los documentos electrónicos es correcta?",
+      "answers": [
+        "El documento electrónico se puede utilizar como soporte de documentos privados.",
+        "El documento electrónico se puede utilizar como soporte de documentos públicos.",
+        "El documento electrónico se puede utilizar como soporte de documentos expedidos y firmados electrónicamente por funcionarios.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct_answer": "Todas las anteriores son correctas."
+    },
+    {
+      "question": "Señala cuál de las siguientes afirmaciones es correcta:",
+      "answers": [
+        "El soporte en el que se hallen los datos firmados electrónicamente solo servirá como prueba documental en un juicio si fue firmado ante un fedatario público.",
+        "No es susceptible de impugnación la autenticidad de la firma electrónica cualificada.",
+        "La impugnación de una firma electrónica cualificada es siempre y automáticamente temeraria.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct_answer": "Ninguna de las anteriores es correcta."
+    },
+    {
+      "question": "¿Qué sistema de claves puede servir para la firma electrónica avanzada?",
+      "answers": [
+        "La clave de protección de un documento para evitar su apertura.",
+        "El sistema de clave simétrica.",
+        "El sistema de clave asimétrica.",
+        "La imagen de una firma escaneada insertada en un documento electrónico."
+      ],
+      "correct_answer": "El sistema de clave asimétrica."
+    },
+    {
+      "question": "Señala cuál de las siguientes respuestas es correcta en relación con el DNI electrónico:",
+      "answers": [
+        "El DNI electrónico no permite acreditar electrónicamente la identidad personal del titular, pero sí que le permite firmar electrónicamente documentos.",
+        "El DNI electrónico permite acreditar electrónicamente la identidad personal del titular, pero no le permite firmar electrónicamente documentos.",
+        "El DNI electrónico permite acreditar electrónicamente la identidad personal del titular y firmar electrónicamente documentos.",
+        "Ninguna de las respuestas anteriores es correcta."
+      ],
+      "correct_answer": "El DNI electrónico permite acreditar electrónicamente la identidad personal del titular y firmar electrónicamente documentos."
+    },
+    {
+      "question": "Si hablamos de clave pública y clave privada nos referimos a:",
+      "answers": [
+        "Sistemas de claves de la administración y la empresa.",
+        "Claves protegidas y certificadas.",
+        "Sistema de claves asimétricas.",
+        "Sistema de claves simétricas."
+      ],
+      "correct_answer": "Sistema de claves asimétricas."
+    },
+    {
+      "question": "¿Qué se puede utilizar al firmar electrónicamente un documento para garantizar la integridad de lo firmado?",
+      "answers": [
+        "Una firma electrónica avanzada.",
+        "Un almacenamiento en la nube.",
+        "Una firma electrónica cualificada.",
+        "Una clave simétrica junto con la firma electrónica cualificada."
+      ],
+      "correct_answer": "Una clave simétrica junto con la firma electrónica cualificada."
+    }
+  ]
+}

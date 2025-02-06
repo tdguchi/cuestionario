@@ -1,0 +1,105 @@
+{
+  "asignatura": "Deontología",
+  "questions": [
+    {
+      "question": "¿Cuál de las siguientes definiciones se corresponde con la de una licencia de software shrink-wrap?",
+      "answers": [
+        "La aceptación se manifiesta al hacer clic.",
+        "Aparecen impresos en el paquete los principales aspectos de la licencia y se prevé la devolución si no se está de acuerdo.",
+        "En este tipo de licencias los términos aparecen en un hiperenlace.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct_answer": "Aparecen impresos en el paquete los principales aspectos de la licencia y se prevé la devolución si no se está de acuerdo."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre un contrato de licencia de uso de software y el contrato de cesión?",
+      "answers": [
+        "La licencia de uso equivale a una autorización para utilizar el software mientras que la cesión conlleva la transmisión de derechos de explotación.",
+        "Ambos términos se usan indistintamente ya que no presentan diferencias.",
+        "En el contrato de licencia se transmiten todos los derechos mientras que en el de cesión no.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct_answer": "La licencia de uso equivale a una autorización para utilizar el software mientras que la cesión conlleva la transmisión de derechos de explotación."
+    },
+    {
+      "question": "Jurídicamente una app que consiste en un videojuego se aproxima más al concepto de:",
+      "answers": [
+        "Programa de ordenador.",
+        "Obra multimedia con textos, imágenes, software, sonidos y gráficos (entre otros elementos).",
+        "Una base de datos.",
+        "Una obra científica."
+      ],
+      "correct_answer": "Obra multimedia con textos, imágenes, software, sonidos y gráficos (entre otros elementos)."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones es correcta?",
+      "answers": [
+        "El registro de la propiedad intelectual es declarativo, pero no es necesario inscribir un software para que se proteja por propiedad intelectual.",
+        "La inscripción en el registro de la propiedad intelectual es necesario para que un software sea protegido.",
+        "Para que un software pueda ser protegido hay que registrarlo ante notario.",
+        "B y C son correctas."
+      ],
+      "correct_answer": "El registro de la propiedad intelectual es declarativo, pero no es necesario inscribir un software para que se proteja por propiedad intelectual."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones es correcta?",
+      "answers": [
+        "El derecho de reproducir un software equivale a darle al «play» para que funcione.",
+        "El derecho de transformación incluye la capacidad de hacer nuevas versiones del software.",
+        "El software solo se protege a través de patentes.",
+        "El software no se puede proteger en ningún caso pues afectaría a la capacidad de innovación."
+      ],
+      "correct_answer": "El derecho de transformación incluye la capacidad de hacer nuevas versiones del software."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones es correcta?",
+      "answers": [
+        "Un virus, en cuanto software, se protegería por propiedad intelectual.",
+        "La propiedad intelectual de un software solo protege el denominado código máquina.",
+        "A y B son correctas.",
+        "El software se protege por propiedad intelectual porque se equipara con una obra literaria."
+      ],
+      "correct_answer": "El software se protege por propiedad intelectual porque se equipara con una obra literaria."
+    },
+    {
+      "question": "¿Quién ostenta los derechos de propiedad intelectual de una obra colectiva?",
+      "answers": [
+        "La persona que llevó la iniciativa y coordinó la creación de la obra.",
+        "La que primero registre la obra.",
+        "Todas las personas que forman el colectivo que crea la obra.",
+        "B y C son correctas."
+      ],
+      "correct_answer": "La persona que llevó la iniciativa y coordinó la creación de la obra."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones se cumple para una base de datos?",
+      "answers": [
+        "Las bases de datos pueden gozar de un doble sistema de protección a través del derecho sui géneris y del derecho de autor.",
+        "Las bases de datos se protegen únicamente por derechos de autor.",
+        "Las bases de datos se protegen únicamente por derecho sui géneris.",
+        "Las bases de datos solo se protegen a través de patentes."
+      ],
+      "correct_answer": "Las bases de datos pueden gozar de un doble sistema de protección a través del derecho sui géneris y del derecho de autor."
+    },
+    {
+      "question": "¿Cuáles son los derechos patrimoniales de la propiedad intelectual?",
+      "answers": [
+        "La reproducción, la comercialización, la comunicación pública y la transformación.",
+        "La comercialización, la distribución, la enajenación y la transformación.",
+        "La reproducción, la distribución, la comunicación pública y la transformación.",
+        "La reproducción, la distribución, la cesión y la externalización."
+      ],
+      "correct_answer": "La reproducción, la distribución, la comunicación pública y la transformación."
+    },
+    {
+      "question": "¿Cuál de los siguientes principios no es aplicable al software libre?",
+      "answers": [
+        "El usuario solo tiene acceso al código objeto.",
+        "El usuario puede ejecutar el programa para cualquier propósito.",
+        "El autor da acceso al código fuente.",
+        "Los terceros pueden estudiar con total libertad cómo funciona el programa y pueden modificarlo."
+      ],
+      "correct_answer": "El usuario solo tiene acceso al código objeto."
+    }
+  ]
+}

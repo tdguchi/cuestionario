@@ -1,0 +1,105 @@
+{
+  "asignatura": "Deontología",
+  "questions": [
+    {
+      "question": "Elaborar y mantener el registro de las actividades del tratamiento:",
+      "answers": [
+        "Es una obligación exclusiva del responsable del tratamiento.",
+        "No es obligatorio para las empresas que no tengan encargados del tratamiento.",
+        "Es una obligación tanto del responsable como del encargado del tratamiento.",
+        "No es obligatorio para las empresas con menos de 200 trabajadores."
+      ],
+      "correct_answer": "Es una obligación tanto del responsable como del encargado del tratamiento."
+    },
+    {
+      "question": "El responsable del tratamiento, en cuanto a la externalización en el tratamiento de los datos personales, deberá:",
+      "answers": [
+        "Contar con encargados del tratamiento si tiene más de 250 trabajadores.",
+        "Contratar a encargados del tratamiento que ofrezcan garantías para cumplir el RGPD.",
+        "Contratar a encargados del tratamiento que ofrezcan garantías del cumplimiento de las obligaciones laborales y fiscales.",
+        "Contratar a encargados del tratamiento si se manejan datos de salud."
+      ],
+      "correct_answer": "Contratar a encargados del tratamiento que ofrezcan garantías para cumplir el RGPD."
+    },
+    {
+      "question": "¿Qué ocurre si el encargado del tratamiento incumple las obligaciones establecidas por el responsable en el tratamiento de los datos personales?",
+      "answers": [
+        "Se debe resolver la relación entre el responsable y el encargado.",
+        "El encargado debe indemnizar al responsable.",
+        "El encargado se convierte en el responsable de los datos personales que esté tratando.",
+        "Debe suprimir los datos para dejar de tratarlos."
+      ],
+      "correct_answer": "El encargado se convierte en el responsable de los datos personales que esté tratando."
+    },
+    {
+      "question": "¿Cuáles son las medidas de seguridad que hay que implantar a los datos personales?",
+      "answers": [
+        "El nivel básico, medio y alto de seguridad.",
+        "El nivel de seguridad según el tipo de datos que se estén tratando.",
+        "Las medidas de seguridad según los riesgos que puedan existir para los tratamientos de datos personales.",
+        "Las medidas de seguridad según los fines para los que se traten los datos."
+      ],
+      "correct_answer": "Las medidas de seguridad según los riesgos que puedan existir para los tratamientos de datos personales."
+    },
+    {
+      "question": "¿Cuál es el plazo para notificar las brechas de seguridad de los datos personales?",
+      "answers": [
+        "24 horas.",
+        "12 horas.",
+        "48 horas.",
+        "72 horas."
+      ],
+      "correct_answer": "72 horas."
+    },
+    {
+      "question": "¿Cuándo se debe nombrar a un delegado de protección de datos?",
+      "answers": [
+        "Cuando se solicite el consentimiento para el tratamiento de los datos mediante casillas premarcadas.",
+        "Cuando exista una ley que legitime el tratamiento de los datos.",
+        "Cuando se traten datos de categoría especial.",
+        "Cuando se hagan transferencias internacionales de datos."
+      ],
+      "correct_answer": "Cuando se traten datos de categoría especial."
+    },
+    {
+      "question": "La excepción del registro de actividades del tratamiento de datos que no entrañen un riesgo para los derechos y libertades de los interesados, sean casuales y no sean de datos de categorías especiales es para empresas responsables y encargados con:",
+      "answers": [
+        "Menos de 200 trabajadores.",
+        "Menos de 250 trabajadores.",
+        "No hay exención.",
+        "Ninguna es correcta."
+      ],
+      "correct_answer": "Menos de 250 trabajadores."
+    },
+    {
+      "question": "¿Cuándo será necesario la evaluación de impacto?",
+      "answers": [
+        "Si el tratamiento utiliza nuevas tecnologías, por su naturaleza, alcance, contexto o fines, y entraña un alto riesgo para los derechos y libertades de las personas físicas.",
+        "Si hay un tratamiento de gran escala de datos de categoría especial.",
+        "Si hay tratamientos que realizan la elaboración de perfiles (profiling).",
+        "Las 3 anteriores son correctas."
+      ],
+      "correct_answer": "Las 3 anteriores son correctas."
+    },
+    {
+      "question": "La privacidad desde el diseño y por defecto:",
+      "answers": [
+        "Es obligatorio para los tratamientos de datos de categoría especial.",
+        "Es voluntario según decida el responsable del tratamiento.",
+        "Es una obligación para todos los responsables del tratamiento.",
+        "Es obligatorio si se debe realizar el registro de las actividades del tratamiento."
+      ],
+      "correct_answer": "Es una obligación para todos los responsables del tratamiento."
+    },
+    {
+      "question": "¿Cuándo se analiza la necesidad y la proporcionalidad de los tratamientos de datos respecto a las finalidades?",
+      "answers": [
+        "Al llevar a cabo una evaluación de impacto del tratamiento de datos personales.",
+        "Cuando se vaya a nombrar al delegado de protección de datos personales.",
+        "Cuando se analice la finalidad de los tratamientos de datos personales.",
+        "Al llevar a cabo un contrato entre el responsable y el encargado del tratamiento."
+      ],
+      "correct_answer": "Al llevar a cabo una evaluación de impacto del tratamiento de datos personales."
+    }
+  ]
+}

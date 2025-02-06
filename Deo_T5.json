@@ -1,0 +1,106 @@
+{
+  "asignatura": "Deontología",
+  "questions": [
+    {
+      "question": "¿Cuál de las siguientes afirmaciones no es correcta conforme a la normativa que regula el envío de comunicaciones comerciales por medios electrónicos?",
+      "answers": [
+        "Hay que identificar que se trata de una comunicación comercial.",
+        "Se tiene que indicar el nombre de la persona que la envía o por quien se envía.",
+        "La LSSI regula todas las previsiones que tiene que cumplir la publicidad por medios electrónicos sin que le aplique ninguna otra normativa.",
+        "A y B son correctas."
+      ],
+      "correct_answer": "La LSSI regula todas las previsiones que tiene que cumplir la publicidad por medios electrónicos sin que le aplique ninguna otra normativa."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones es correcta conforme a la normativa que regula el envío de comunicaciones comerciales por medios electrónicos?",
+      "answers": [
+        "Con carácter general y sin perjuicio del régimen de excepciones, se prohíbe el envío de comunicaciones comerciales realizadas a través de correo electrónico o medios de comunicación electrónica equivalentes si no han sido solicitadas o autorizadas por los destinatarios.",
+        "Con carácter general y sin perjuicio del régimen de excepciones, se prohíbe el envío a través de medios de comunicación electrónica equivalentes si no han sido solicitadas o autorizadas por los destinatarios.",
+        "La LSSI permite el envío de publicidad por correo electrónico sin necesidad de consentimiento del usuario solo si se da la posibilidad al usuario de oponerse al envío de este tipo de comunicaciones.",
+        "La LSSI permite el envío de comunicaciones por correo postal sin el consentimiento, pero exige el consentimiento sin excepción para el envío de publicidad online.",
+        "Ninguna de las anteriores es correcta."
+      ],
+      "correct_answer": "Con carácter general y sin perjuicio del régimen de excepciones, se prohíbe el envío de comunicaciones comerciales realizadas a través de correo electrónico o medios de comunicación electrónica equivalentes si no han sido solicitadas o autorizadas por los destinatarios."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones no es una excepción frente a la regla general para el envío de comunicaciones comerciales por medios electrónicos?",
+      "answers": [
+        "Se pueden enviar comunicaciones comerciales si existe una relación comercial previa.",
+        "Se han obtenido los datos lícitamente.",
+        "La comunicación es relativa a los mismos productos y servicios contratados.",
+        "Los datos estaban disponibles en Internet."
+      ],
+      "correct_answer": "Los datos estaban disponibles en Internet."
+    },
+    {
+      "question": "Indica cuál de las siguientes afirmaciones es correcta:",
+      "answers": [
+        "Para el envío de comunicaciones comerciales es necesario siempre un opt‑in.",
+        "Para el envío de comunicaciones comerciales se exige que se identifique la publicidad como publicidad.",
+        "Para recabar el consentimiento para el envío de comunicaciones comerciales por medios ordinarios es suficiente una manifestación expresa o tácita.",
+        "La publicidad que se envíe a través de comunicaciones comerciales por medios electrónicos debe ser de productos elaborados o servicios prestados por quien realiza el envío."
+      ],
+      "correct_answer": "Para el envío de comunicaciones comerciales se exige que se identifique la publicidad como publicidad."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones respecto de los derechos de los destinatarios a la hora de recibir comunicaciones comerciales es correcta?",
+      "answers": [
+        "El destinatario podrá revocar el consentimiento prestado en todo momento con la simple notificación de su voluntad y por procedimientos sencillos y gratuitos.",
+        "El destinatario puede revocar el consentimiento para recibir las comunicaciones comerciales previo pago de un precio previamente acordado entre las partes.",
+        "No es necesario informar al destinatario de los medios que tiene para revocar el consentimiento.",
+        "Si las comunicaciones comerciales se envían por email cualquier medio para revocar el consentimiento es válido, incluido el soporte papel."
+      ],
+      "correct_answer": "El destinatario podrá revocar el consentimiento prestado en todo momento con la simple notificación de su voluntad y por procedimientos sencillos y gratuitos."
+    },
+    {
+      "question": "¿Son válidos los contratos celebrados electrónicamente? Señale la respuesta correcta:",
+      "answers": [
+        "Solo cuando interviene un fedatario público que da fe de la celebración del contrato.",
+        "Son válidos y producen todos los efectos cuando concurran los requisitos necesarios: consentimiento, objeto y causa.",
+        "Solo son válidos los celebrados a través de un email.",
+        "Nunca son válidos si no se utilizan certificados electrónicos."
+      ],
+      "correct_answer": "Son válidos y producen todos los efectos cuando concurran los requisitos necesarios: consentimiento, objeto y causa."
+    },
+    {
+      "question": "El derecho de desistimiento en el comercio electrónico:",
+      "answers": [
+        "Se puede solicitar en un plazo de catorce días.",
+        "Se puede solicitar en un plazo de un mes.",
+        "Se puede solicitar en un plazo de siete días.",
+        "Se puede solicitar en un plazo de tres meses."
+      ],
+      "correct_answer": "Se puede solicitar en un plazo de catorce días."
+    },
+    {
+      "question": "Señala cuál de las siguientes respuestas es correcta en relación con las obligaciones de información previas al contrato:",
+      "answers": [
+        "El prestador deberá informar sobre los trámites para celebrar el contrato.",
+        "El prestador deberá informar sobre si va a archivar el documento y si será accesible.",
+        "El prestador deberá informar sobre los medios técnicos para identificar y corregir errores.",
+        "Todas las respuestas anteriores son correctas."
+      ],
+      "correct_answer": "Todas las respuestas anteriores son correctas."
+    },
+    {
+      "question": "¿Cuál es otra denominación utilizada para los dispositivos de almacenamiento y recuperación de datos en equipos terminales de los destinatarios?",
+      "answers": [
+        "Mailmarketing.",
+        "Web Site.",
+        "Cookies.",
+        "Apps."
+      ],
+      "correct_answer": "Cookies."
+    },
+    {
+      "question": "¿Cuál de las siguientes sería una clasificación de cookies según su finalidad?",
+      "answers": [
+        "Persistentes y de sesión.",
+        "Técnicas, de análisis y de publicidad.",
+        "Personalizadas, persistentes y de terceros.",
+        "Propias, personalizadas y de publicidad."
+      ],
+      "correct_answer": "Técnicas, de análisis y de publicidad."
+    }
+  ]
+}

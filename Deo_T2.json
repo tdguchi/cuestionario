@@ -1,0 +1,105 @@
+{
+  "asignatura": "Deontología",
+  "questions": [
+    {
+      "question": "¿Cuál de los siguientes términos se refiere a la persona física o jurídica que determina los medios y fines del tratamiento?",
+      "answers": [
+        "El interesado.",
+        "El encargado del tratamiento.",
+        "El responsable del tratamiento.",
+        "El afectado."
+      ],
+      "correct_answer": "El responsable del tratamiento."
+    },
+    {
+      "question": "La «libertad informática»:",
+      "answers": [
+        "Es el derecho a controlar el uso de los mismos datos insertos en un programa informático (habeas data).",
+        "Comprende, entre otros aspectos, la oposición del ciudadano a que determinados datos personales sean utilizados para fines distintos de aquel legítimo que justificó su obtención.",
+        "Está recogido en el art. 18.4 CE.",
+        "Todas las anteriores."
+      ],
+      "correct_answer": "Todas las anteriores."
+    },
+    {
+      "question": "Según el nuevo RGPD, el consentimiento debe ser:",
+      "answers": [
+        "Libre, tácito, informado.",
+        "Libre, específico, informado e inequívoco.",
+        "Libre y específico valiendo las casillas preseleccionadas.",
+        "Ninguna de las anteriores."
+      ],
+      "correct_answer": "Libre, específico, informado e inequívoco."
+    },
+    {
+      "question": "Los datos personales obtenidos a partir de un tratamiento técnico específico relativos a las características físicas, fisiológicas o conductuales de una persona física son:",
+      "answers": [
+        "Datos genéticos.",
+        "Datos biométricos.",
+        "Datos disociados.",
+        "Datos sensibles."
+      ],
+      "correct_answer": "Datos biométricos."
+    },
+    {
+      "question": "Los datos personales obtenidos a partir de una muestra biológica son:",
+      "answers": [
+        "Datos genéticos.",
+        "Datos biométricos.",
+        "Datos disociados.",
+        "Datos sensibles."
+      ],
+      "correct_answer": "Datos genéticos."
+    },
+    {
+      "question": "El principio de minimización se refiere expresamente a:",
+      "answers": [
+        "La cantidad limitada de los datos recogidos.",
+        "El número de personas que acceden a los mismos.",
+        "El período del tratamiento.",
+        "Las tres anteriores."
+      ],
+      "correct_answer": "La cantidad limitada de los datos recogidos."
+    },
+    {
+      "question": "El principio de limitación de la finalidad se refiere expresamente a:",
+      "answers": [
+        "Los límites temporales del tratamiento de los datos.",
+        "Los fines determinados, explícitos y legítimos del manejo de datos.",
+        "Los fines económicos del manejo de los datos.",
+        "Los límites territoriales en el manejo de datos."
+      ],
+      "correct_answer": "Los fines determinados, explícitos y legítimos del manejo de datos."
+    },
+    {
+      "question": "El derecho de acceso en el RGPD se refiere a:",
+      "answers": [
+        "El derecho de acceso a internet que tienen los seres humanos.",
+        "El derecho a la tecnología que tienen las personas.",
+        "El derecho al acceso a la información.",
+        "El derecho a saber qué datos personales se están tratando."
+      ],
+      "correct_answer": "El derecho a saber qué datos personales se están tratando."
+    },
+    {
+      "question": "El derecho de limitación se refiere a:",
+      "answers": [
+        "Que se limite el número de encargados del tratamiento.",
+        "Que se limite el número de dispositivos con datos personales.",
+        "Que se limite el tratamiento de los datos.",
+        "Todas las anteriores."
+      ],
+      "correct_answer": "Que se limite el tratamiento de los datos."
+    },
+    {
+      "question": "¿En qué consiste el derecho de portabilidad en el tratamiento de los datos personales?",
+      "answers": [
+        "El derecho de las personas a portar sus datos en su teléfono, ordenador, tablet, etc.",
+        "El derecho de las personas a pedir que se transporten los datos por las redes de comunicación.",
+        "El derecho de las personas a exigir que las empresas porten los datos a dispositivos seguros.",
+        "El derecho de las personas a pedir una copia de los datos que se tratan en un formato electrónico."
+      ],
+      "correct_answer": "El derecho de las personas a pedir una copia de los datos que se tratan en un formato electrónico."
+    }
+  ]
+}
