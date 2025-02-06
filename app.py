@@ -109,8 +109,14 @@ def submit():
     for user_answer in user_answers:
         question_text = user_answer["question"]
         selected_answer = user_answer["answer"]
-        correct_answer = next(q for q in questions if q["question"] == question_text)["correct_answer"]
-        is_correct = selected_answer == correct_answer
+        try:
+            question = next(q for q in questions if q["question"] == question_text)
+            correct_answer = question["correct_answer"]
+            is_correct = selected_answer == correct_answer
+        except StopIteration:
+            # If question not found, consider it incorrect
+            correct_answer = "Not found"
+            is_correct = False
         if is_correct:
             correct_count += 1
         results.append({
