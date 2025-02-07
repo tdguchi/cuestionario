@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify, flash, redirect, url_for, make_response, session
-from werkzeug.utils import secure_filename
 import json
 import random
 import sqlite3
