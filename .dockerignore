@@ -1,0 +1,31 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Database
+*.db
+
+# System files
+.DS_Store
