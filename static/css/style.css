@@ -59,103 +59,6 @@ body {
     width: 100%;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-        margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-    }
-    
-    .my-5 {
-        margin-top: 1rem !important;
-        margin-bottom: 1rem !important;
-    }
-
-    .py-4 {
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
-    }
-
-    .mb-4 {
-        margin-bottom: 1rem !important;
-    }
-    
-    .card-body {
-        padding: 1rem;
-    }
-
-    /* Adjust question container for mobile */
-    .mb-4[data-question] {
-        padding: 10px;
-        margin-bottom: 15px !important;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 8px;
-    }
-
-    /* Make answers more touch-friendly */
-    .form-check .d-flex .form-check-label {
-        padding: 12px 15px;
-        font-size: 0.95rem;
-        line-height: 1.4;
-    }
-
-    /* Adjust container spacing on mobile */
-    .container-fluid {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .form-check-label {
-        padding: 0.5rem;
-        font-size: 0.95rem;
-    }
-
-    .btn {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    h4 {
-        font-size: 1.1rem;
-    }
-
-    h5 {
-        font-size: 1rem;
-    }
-
-    .col-md-2, .col-md-4 {
-        margin-bottom: 10px;
-    }
-
-    .form-check-inline {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .input-group {
-        flex-direction: column;
-    }
-
-    .input-group .form-control,
-    .input-group .btn {
-        border-radius: 8px;
-        margin: 5px 0;
-    }
-
-    .config-section .card {
-        margin-bottom: 15px;
-    }
-}
-
 .card:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0,0,0,0.1);
@@ -208,6 +111,20 @@ body {
 }
 
 /* Questions styling */
+.mb-4[data-question] {
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    margin-bottom: 2rem !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.mb-4[data-question]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
 .mb-4 h5 {
     color: #2b5876;
     font-weight: 600;
@@ -283,12 +200,37 @@ body {
     background: #f8f9fa;
     margin-bottom: 0.5rem;
     color: #495057;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Selected answer state before submission */
-.form-check-input:checked + .form-check-label {
+.form-check-label:hover:not(.correct ~ .form-check-label):not(.incorrect ~ .form-check-label):not(.unanswered-correct ~ .form-check-label) {
+    background: #e9ecef;
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-check-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(45deg, #2b5876 0%, #4e4376 100%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.form-check-label:hover:not(.correct ~ .form-check-label):not(.incorrect ~ .form-check-label):not(.unanswered-correct ~ .form-check-label)::before {
+    opacity: 1;
+}
+
+/* Selected answer state */
+.form-check-input:checked + .form-check-label:not(.correct ~ .form-check-label):not(.incorrect ~ .form-check-label):not(.unanswered-correct ~ .form-check-label) {
     background: #e9ecef;
     border-color: #dee2e6;
+    transform: translateX(4px);
 }
 
 /* Answer states */
@@ -303,33 +245,101 @@ body {
     padding: 0.75rem 1rem;
 }
 
-/* Correct answer state */
+/* Answer states after submission */
 .form-check .d-flex.correct .form-check-label {
     background-color: #e8f5e9 !important;
     border: 2px solid #4caf50 !important;
     color: #2e7d32 !important;
     font-weight: 600 !important;
+    transform: none !important;
 }
 
-/* Incorrect answer state */
 .form-check .d-flex.incorrect .form-check-label {
     background-color: #ffebee !important;
     border: 2px solid #f44336 !important;
     color: #c62828 !important;
     font-weight: 600 !important;
+    transform: none !important;
 }
 
-/* Unanswered correct answer state */
 .form-check .d-flex.unanswered-correct .form-check-label {
     background-color: #e3f2fd !important;
     border: 2px solid #2196f3 !important;
     color: #1565c0 !important;
     font-weight: 600 !important;
+    transform: none !important;
+}
+
+/* Remove hover effects after submission */
+.form-check .d-flex.correct .form-check-label:hover,
+.form-check .d-flex.incorrect .form-check-label:hover,
+.form-check .d-flex.unanswered-correct .form-check-label:hover {
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 /* Hide feedback icons */
 .feedback-icon, .correct-answer {
     display: none !important;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    margin-right: 8px;
+    animation: spin 1s linear infinite;
+}
+
+.btn:disabled .loading-spinner {
+    display: inline-block;
+}
+
+/* Results section styling */
+.results-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.results-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.result-stat {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    min-width: 150px;
+    transition: transform 0.2s ease;
+}
+
+.result-stat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.result-stat h5 {
+    color: #2b5876;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.result-stat p {
+    margin: 0;
+    color: #6c757d;
 }
 
 /* Animations */
@@ -341,5 +351,109 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in forwards;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .my-5 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .py-4 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .mb-4[data-question] {
+        padding: 1rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .form-check .d-flex .form-check-label {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-check-label {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.25rem; }
+    h4 { font-size: 1.1rem; }
+    h5 { font-size: 1rem; }
+
+    .col-md-2, .col-md-4 {
+        margin-bottom: 10px;
+    }
+
+    .form-check-inline {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group .form-control,
+    .input-group .btn {
+        border-radius: 8px;
+        margin: 5px 0;
+    }
+
+    .config-section .card {
+        margin-bottom: 15px;
+    }
+
+    .results-summary {
+        gap: 0.5rem;
+    }
+
+    .result-stat {
+        min-width: calc(50% - 1rem);
+        padding: 0.75rem;
+    }
+
+    .result-stat h5 {
+        font-size: 1.5rem;
     }
 }

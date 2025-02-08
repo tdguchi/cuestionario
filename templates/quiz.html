@@ -15,7 +15,7 @@
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 {% for category, message in messages %}
-                    <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+                    <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show fade-in" role="alert">
                         {{ message }}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
@@ -32,56 +32,56 @@
                 <div class="card-header text-center text-white config-header">
                     <h4>Cargar Preguntas</h4>
                 </div>
-            <div class="card-body collapse show" id="uploadForm">
-                <form action="/upload" method="post" enctype="multipart/form-data">
-                    <div class="input-group">
-                        <input type="file" class="form-control" name="file" accept=".json">
-                        <button class="btn btn-secondary" type="submit">Cargar</button>
-                    </div>
-                </form>
+                <div class="card-body collapse show" id="uploadForm">
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                        <div class="input-group">
+                            <input type="file" class="form-control" name="file" accept=".json">
+                            <button class="btn btn-secondary" type="submit">Cargar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
             <div class="card mb-4">
                 <div class="card-header text-center text-white config-header">
                     <h4>Seleccionar Preguntas</h4>
                 </div>
-            <div class="card-body collapse show" id="selectForm">
-                <form action="/" method="get" class="row g-3">
-                    <div class="col-md-4">
-                        <select class="form-select" name="subject" required>
-                            <option value="">Selecciona asignatura...</option>
-                            {% for subject in subjects %}
-                                <option value="{{ subject }}" {% if selected_subject == subject %}selected{% endif %}>
-                                    {{ subject }}
-                                </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <input type="number" class="form-control" name="limit" min="1" placeholder="№ preguntas" value="{{ limit if limit else '' }}">
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input filter-checkbox" type="checkbox" name="only_failed" value="true" id="onlyFailed" 
-                                   {% if only_failed == 'true' %}checked{% endif %}>
-                            <label class="form-check-label" for="onlyFailed">
-                                Solo falladas
-                            </label>
+                <div class="card-body collapse show" id="selectForm">
+                    <form action="/" method="get" class="row g-3">
+                        <div class="col-md-4">
+                            <select class="form-select" name="subject" required>
+                                <option value="">Selecciona asignatura...</option>
+                                {% for subject in subjects %}
+                                    <option value="{{ subject }}" {% if selected_subject == subject %}selected{% endif %}>
+                                        {{ subject }}
+                                    </option>
+                                {% endfor %}
+                            </select>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input filter-checkbox" type="checkbox" name="only_new" value="true" id="onlyNew"
-                                   {% if only_new == 'true' %}checked{% endif %}>
-                            <label class="form-check-label" for="onlyNew">
-                                Solo nuevas
-                            </label>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control" name="limit" min="1" placeholder="№ preguntas" value="{{ limit if limit else '' }}">
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button type="submit" class="btn btn-secondary w-100">Cargar</button>
-                    </div>
-                </form>
+                        <div class="col-md-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input filter-checkbox" type="checkbox" name="only_failed" value="true" id="onlyFailed" 
+                                       {% if only_failed == 'true' %}checked{% endif %}>
+                                <label class="form-check-label" for="onlyFailed">
+                                    Solo falladas
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input filter-checkbox" type="checkbox" name="only_new" value="true" id="onlyNew"
+                                       {% if only_new == 'true' %}checked{% endif %}>
+                                <label class="form-check-label" for="onlyNew">
+                                    Solo nuevas
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-secondary w-100">Cargar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
         </div>
         {% if questions %}
         <div class="card">
@@ -93,29 +93,34 @@
                 <p class="mb-0">Por favor, responde las siguientes preguntas:</p>
             </div>
             <div class="card-body">
-                <form id="quiz-form">
-                    {% for question in questions %}
-                        {% set outer_loop = loop %}
-                        <div class="mb-4" data-question="{{ question.question }}">
-                            <h5>{{ question.question }}</h5>
-                            <div class="form-check answer-container">
-                                {% for answer in question.answers %}
-                                    <div class="d-flex align-items-center mb-2">
-                                        <input class="form-check-input" type="radio" name="question_{{ outer_loop.index0 }}" value="{{ answer }}" id="q{{ outer_loop.index0 }}_{{ loop.index0 }}" required>
-                                        <label class="form-check-label ms-2" for="q{{ outer_loop.index0 }}_{{ loop.index0 }}">
-                                            {{ answer }}
-                                        </label>
-                                        <i class="bi bi-check-circle-fill text-success feedback-icon"></i>
-                                        <i class="bi bi-x-circle-fill text-danger feedback-icon"></i>
-                                        <span class="correct-answer">Respuesta correcta</span>
-                                    </div>
-                                {% endfor %}
+                <div>
+                    <form id="quiz-form">
+                        {% for question in questions %}
+                            {% set outer_loop = loop %}
+                            <div class="mb-4" data-question="{{ question.question }}">
+                                <h5>{{ question.question }}</h5>
+                                <div class="form-check answer-container">
+                                    {% for answer in question.answers %}
+                                        <div class="d-flex align-items-center mb-2">
+                                            <input class="form-check-input" type="radio" name="question_{{ outer_loop.index0 }}" value="{{ answer }}" id="q{{ outer_loop.index0 }}_{{ loop.index0 }}">
+                                            <label class="form-check-label ms-2" for="q{{ outer_loop.index0 }}_{{ loop.index0 }}">
+                                                {{ answer }}
+                                            </label>
+                                            <i class="bi bi-check-circle-fill text-success feedback-icon"></i>
+                                            <i class="bi bi-x-circle-fill text-danger feedback-icon"></i>
+                                            <span class="correct-answer">Respuesta correcta</span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
-                </form>
-                <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-success" onclick="submitQuiz()">Enviar</button>
+                        {% endfor %}
+                    </form>
+                    <div class="d-flex justify-content-end mt-4">
+                        <button type="button" class="btn btn-success submit-quiz" onclick="submitQuiz()">
+                            <div class="loading-spinner"></div>
+                            <span>Enviar</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
