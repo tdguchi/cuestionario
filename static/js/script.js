@@ -107,7 +107,9 @@ function submitQuiz() {
 
             // Remove previous results
             const answers = answerContainer.querySelectorAll('.d-flex');
-            answers.forEach(answer => answer.classList.remove('correct', 'incorrect'));
+            answers.forEach(answer => {
+                answer.classList.remove('correct', 'incorrect', 'unanswered-correct');
+            });
 
             // Process each answer
             answers.forEach(answerDiv => {
@@ -122,19 +124,20 @@ function submitQuiz() {
                     value: input.value,
                     text: label?.textContent?.trim(),
                     selected: input.value === res.selected_answer,
-                    correct: input.value === res.correct_answer
+                    correct: input.value === res.correct_answer,
+                    unanswered: res.unanswered
                 });
 
-                if (input.value === res.selected_answer) {
+                if (res.unanswered && input.value === res.correct_answer) {
+                    // Highlight correct answer in blue for unanswered questions
+                    answerDiv.classList.add('unanswered-correct');
+                } else if (input.value === res.selected_answer) {
                     if (res.is_correct) {
-                        console.log('Marking selected as correct:', input.value);
                         answerDiv.classList.add('correct');
                     } else {
-                        console.log('Marking selected as incorrect:', input.value);
                         answerDiv.classList.add('incorrect');
                     }
                 } else if (input.value === res.correct_answer && !res.is_correct) {
-                    console.log('Marking correct answer:', input.value);
                     answerDiv.classList.add('correct');
                 }
             });

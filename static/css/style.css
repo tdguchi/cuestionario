@@ -319,6 +319,14 @@ body {
     font-weight: 600 !important;
 }
 
+/* Unanswered correct answer state */
+.form-check .d-flex.unanswered-correct .form-check-label {
+    background-color: #e3f2fd !important;
+    border: 2px solid #2196f3 !important;
+    color: #1565c0 !important;
+    font-weight: 600 !important;
+}
+
 /* Hide feedback icons */
 .feedback-icon, .correct-answer {
     display: none !important;
