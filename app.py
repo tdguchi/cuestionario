@@ -8,7 +8,6 @@ from typing import List, Dict, Any, Optional
 from contextlib import contextmanager
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-here'  # Necesario para flash messages
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1336425837788008508/HJgOTpQrnc03nKuBzU52ZzR2HX1-a0Hrtau0OjjoyPyTTeR6i7evyl9Xt2xU8pE9mUyn"
 
 @contextmanager
