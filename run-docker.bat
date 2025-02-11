@@ -1,0 +1,6 @@
+@echo off
+echo Building Docker image...
+docker build -t cuestionario-app .
+
+echo Starting container...
+docker run -p 5000:5000 cuestionario-app

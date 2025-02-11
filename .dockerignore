@@ -29,3 +29,16 @@ docker-compose.yml
 
 # System files
 .DS_Store
+
+# Dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.git
+.gitignore
+.vs
