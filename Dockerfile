@@ -1,14 +1,12 @@
-FROM python:3.9-windowsservercore
+FROM python:3.9-slim
 
-# Install wkhtmltopdf - Using a Windows compatible version
-RUN powershell -Command \
-    Invoke-WebRequest -Uri https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1.msvc2015-win64.exe -OutFile wkhtmltox.exe ; \
-    Start-Process wkhtmltox.exe -ArgumentList '/S' -Wait ; \
-    Remove-Item wkhtmltox.exe ; \
-    setx PATH "%PATH%;C:\Program Files\wkhtmltopdf\bin"
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    wkhtmltopdf \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
-WORKDIR C:/app
+WORKDIR /app
 
 # Copy requirements first for better caching
 COPY requirements.txt .
