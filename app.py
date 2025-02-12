@@ -52,10 +52,20 @@ def load_questions_by_subject(subject: str, only_failed: bool = False, only_new:
             "correct_answer": row[5]
         } for row in rows]
 
+def should_preserve_order(answers: List[str]) -> bool:
+    preserved_phrases = [
+        "son correctas",
+        "ninguna de las anteriores",
+        "todas son correctas",
+        "ninguna es correcta"
+    ]
+    return any(any(phrase in answer.lower() for phrase in preserved_phrases) for answer in answers)
+
 def shuffle_questions(questions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     random.shuffle(questions)
     for question in questions:
-        random.shuffle(question["answers"])
+        if not should_preserve_order(question["answers"]):
+            random.shuffle(question["answers"])
     return questions
 
 @app.route("/")
