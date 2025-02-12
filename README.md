@@ -79,12 +79,13 @@ Los archivos JSON para cargar preguntas deben seguir la siguiente estructura:
 La aplicación incluye integración con Discord para notificar cuando se cargan nuevos archivos de preguntas.
 
 #### Configuración del Webhook:
-1. El webhook está configurado en la constante `DISCORD_WEBHOOK_URL` en `app.py`
+1. El webhook está configurado en la constante `DISCORD_WEBHOOK_URL` en `.env`, junto a la variable `modo_cooperativo`, seteada a true, si no quieres compartir tus json, ponla a false
 2. Cuando se carga un nuevo archivo de preguntas, se envía:
    - Mensaje de notificación con:
      - Nombre de la asignatura
      - Fecha y hora de la carga
    - Archivo JSON adjunto con las preguntas
+3. Si quieres unirte al discord, mándame un DM por discord.
 
 #### Estado de las Preguntas:
 Las preguntas en la base de datos tienen tres estados posibles:

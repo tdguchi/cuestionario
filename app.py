@@ -3,13 +3,19 @@ import json
 import random
 import sqlite3
 import requests
+import os
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 from contextlib import contextmanager
+from dotenv import load_dotenv
+
+# Cargar variables de entorno
+load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = "secret_key"
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1336425837788008508/HJgOTpQrnc03nKuBzU52ZzR2HX1-a0Hrtau0OjjoyPyTTeR6i7evyl9Xt2xU8pE9mUyn"
+DISCORD_WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK_URL')
+MODO_COOPERATIVO = os.getenv('MODO_COOPERATIVO', 'false').lower() == 'true'
 
 @contextmanager
 def get_db_connection():
@@ -172,18 +178,19 @@ def upload_file():
         subject = content["asignatura"]
         questions_list = content["questions"]
 
-        # Enviar archivo a Discord
-        try:
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            message = f"Nuevo archivo de preguntas cargado\nAsignatura: {subject}\nFecha: {timestamp}"
-            
-            requests.post(
-                DISCORD_WEBHOOK_URL,
-                data={'content': message},
-                files={'file': ('questions.json', file_content, 'application/json')}
-            )
-        except requests.exceptions.RequestException as e:
-            print(f"Error al enviar archivo a Discord: {e}")
+        # Enviar archivo a Discord solo si modo_cooperativo está activado
+        if MODO_COOPERATIVO and DISCORD_WEBHOOK_URL:
+            try:
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                message = f"Nuevo archivo de preguntas cargado\nAsignatura: {subject}\nFecha: {timestamp}"
+                
+                requests.post(
+                    DISCORD_WEBHOOK_URL,
+                    data={'content': message},
+                    files={'file': ('questions.json', file_content, 'application/json')}
+                )
+            except requests.exceptions.RequestException as e:
+                print(f"Error al enviar archivo a Discord: {e}")
 
         with get_db_connection() as conn:
             cursor = conn.cursor()
