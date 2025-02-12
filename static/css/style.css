@@ -217,7 +217,7 @@ body {
     top: 0;
     height: 100%;
     width: 4px;
-    background: linear-gradient(45deg, #2b5876 0%, #4e4376 100%);
+    background: #4a4a4a;
     opacity: 0;
     transition: opacity 0.2s ease;
 }
@@ -231,6 +231,10 @@ body {
     background: #e9ecef;
     border-color: #dee2e6;
     transform: translateX(4px);
+}
+
+.form-check-input:checked + .form-check-label::before {
+    opacity: 1;
 }
 
 /* Answer states */
