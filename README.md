@@ -68,6 +68,9 @@ Los archivos JSON para cargar preguntas deben seguir la siguiente estructura:
 }
 ```
 
+Si quieres agregar una asignatura, basta con que el el json pongas el nombre de la asignatura (en el campo asignatura del json) y al subir el json se creará la tabla correspondiente. 
+Si posteriormente quieres agregar mas preguntas a esa asignatura, ponle el mismo nombre en el campo asignatura para que use la misma tabla en la BBDD.
+
 #### Campos Requeridos:
 - `asignatura`: Nombre de la asignatura o tema del cuestionario
 - `questions`: Array de objetos de preguntas

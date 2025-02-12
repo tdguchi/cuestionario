@@ -247,25 +247,5 @@ def upload_file():
     
     return redirect(url_for('index'))
 
-def init_db():
-    with get_db_connection() as conn:
-        cursor = conn.cursor()
-        for subject in ['Matematicas', 'Historia', 'Ciencia']:
-            table_name = subject.replace(" ", "_")
-            cursor.execute(f"""
-                CREATE TABLE IF NOT EXISTS {table_name} (
-                    question_id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    question TEXT NOT NULL,
-                    correct BOOLEAN NOT NULL,
-                    option1 TEXT,
-                    option2 TEXT,
-                    option3 TEXT,
-                    option4 TEXT,
-                    correct_option TEXT
-                );
-            """)
-        conn.commit()
-
 if __name__ == "__main__":
-    init_db()
     app.run(host='0.0.0.0', debug=True)
