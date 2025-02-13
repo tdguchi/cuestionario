@@ -10,12 +10,16 @@ from contextlib import contextmanager
 from dotenv import load_dotenv
 
 # Cargar variables de entorno
-load_dotenv()
+load_dotenv(override=True)  # Forzar recarga de variables
+
+# Debug de variables de entorno al inicio
+webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
+modo_coop = os.getenv('MODO_COOPERATIVO', 'false')
 
 app = Flask(__name__)
 app.secret_key = "secret_key"
-DISCORD_WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK_URL')
-MODO_COOPERATIVO = os.getenv('MODO_COOPERATIVO', 'false').lower() == 'true'
+DISCORD_WEBHOOK_URL = webhook_url
+MODO_COOPERATIVO = modo_coop.lower() == 'true'
 
 @contextmanager
 def get_db_connection():
@@ -159,6 +163,7 @@ def submit():
 
 @app.route("/upload", methods=["POST"])
 def upload_file():
+    
     if 'file' not in request.files or not request.files['file'].filename:
         flash('No se ha seleccionado ningún archivo', 'error')
         return redirect(url_for('index'))
@@ -183,12 +188,12 @@ def upload_file():
             try:
                 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 message = f"Nuevo archivo de preguntas cargado\nAsignatura: {subject}\nFecha: {timestamp}"
-                
-                requests.post(
+                response = requests.post(
                     DISCORD_WEBHOOK_URL,
                     data={'content': message},
                     files={'file': ('questions.json', file_content, 'application/json')}
                 )
+
             except requests.exceptions.RequestException as e:
                 print(f"Error al enviar archivo a Discord: {e}")
 
