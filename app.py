@@ -35,10 +35,10 @@ def get_subjects() -> List[str]:
         cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';")
         return [row[0].replace('_', ' ') for row in cursor.fetchall()]
 
-def load_questions_by_subject(subject: str, only_failed: bool = False, only_new: bool = False, limit: Optional[str] = None) -> List[Dict[str, Any]]:
+def load_questions_by_subject(subject: str, only_failed: bool = False, only_new: bool = False, limit: Optional[int] = None) -> List[Dict[str, Any]]:
     table_name = subject.replace(" ", "_")
     query_parts = [
-        f"SELECT question, option1, option2, option3, option4, correct_option FROM {table_name}"
+        f"SELECT question_id, question, option1, option2, option3, option4, correct_option FROM {table_name}"
     ]
     
     if only_failed:
@@ -49,11 +49,28 @@ def load_questions_by_subject(subject: str, only_failed: bool = False, only_new:
     query_parts.append("ORDER BY RANDOM()")
     
     if limit and limit.isdigit():
-        query_parts.append(f"LIMIT {limit}")
+        query_parts.append(f"LIMIT {limit}")  # Eliminar la restricción de máximo 24
     
     with get_db_connection() as conn:
         cursor = conn.cursor()
         cursor.execute(" ".join(query_parts))
+        rows = cursor.fetchall()
+        
+        return [{
+            "question_id": row[0],
+            "question": row[1],
+            "answers": [ans for ans in row[2:6] if ans is not None],
+            "correct_answer": row[6]
+        } for row in rows]
+
+def load_questions_by_ids(subject: str, question_ids: List[int]) -> List[Dict[str, Any]]:
+    table_name = subject.replace(" ", "_")
+    placeholders = ','.join('?' for _ in question_ids)
+    query = f"SELECT question, option1, option2, option3, option4, correct_option FROM {table_name} WHERE question_id IN ({placeholders})"
+    
+    with get_db_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute(query, question_ids)
         rows = cursor.fetchall()
         
         return [{
@@ -97,7 +114,7 @@ def index():
             limit=request.args.get('limit')
         )
         questions = shuffle_questions(questions)
-        session["current_questions"] = questions
+        session["current_question_ids"] = [q["question_id"] for q in questions]
     
     return render_template("quiz.html", 
                          questions=questions,
@@ -111,13 +128,14 @@ def index():
 def submit():
     user_answers = request.json
     subject = request.args.get('subject')
-    questions = session.get("current_questions", [])
+    question_ids = session.get("current_question_ids", [])
     
-    if not questions:
+    if not question_ids:
         return jsonify({"error": "No hay preguntas para evaluar"}), 400
     if not user_answers:
         user_answers = []
 
+    questions = load_questions_by_ids(subject, question_ids)
     results = []
     correct_count = 0
     answered_questions = {ua["question"]: ua["answer"] for ua in user_answers}

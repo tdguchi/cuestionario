@@ -65,6 +65,10 @@ function submitQuiz() {
     })
     .then(response => response.json())
     .then(data => {
+        if (!data.results) {
+            throw new Error("Invalid response from server");
+        }
+
         // Create results card
         const resultContainer = document.getElementById('results');
         const score = (data.correct_count / data.results.length * 10).toFixed(1);
@@ -120,6 +124,10 @@ function submitQuiz() {
 
         // Scroll to results
         resultContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Hubo un error al procesar el cuestionario. Por favor, inténtalo de nuevo.');
     })
     .finally(() => {
         // Re-enable submit button and hide spinner
