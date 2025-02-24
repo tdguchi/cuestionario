@@ -85,10 +85,13 @@ function submitQuiz() {
             throw new Error("Invalid response from server");
         }
 
-        // Create results card
-        const resultContainer = document.getElementById('results');
+        // Calculate unanswered questions
+        const unansweredCount = data.results.filter(r => r.unanswered).length;
+        const incorrectCount = data.results.length - data.correct_count - unansweredCount;
         const score = (data.correct_count / data.results.length * 10).toFixed(1);
         
+        // Create results card with updated stats
+        const resultContainer = document.getElementById('results');
         resultContainer.innerHTML = `
             <div class='results-card fade-in'>
                 <div class='results-summary'>
@@ -101,8 +104,12 @@ function submitQuiz() {
                         <p>Correctas</p>
                     </div>
                     <div class='result-stat'>
-                        <h5>${data.results.length - data.correct_count}</h5>
+                        <h5>${incorrectCount}</h5>
                         <p>Incorrectas</p>
+                    </div>
+                    <div class='result-stat'>
+                        <h5>${unansweredCount}</h5>
+                        <p>Sin responder</p>
                     </div>
                     <div class='result-stat'>
                         <h5>${((data.correct_count / data.results.length) * 100).toFixed(0)}%</h5>
