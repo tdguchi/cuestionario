@@ -157,8 +157,9 @@ def submit():
             "unanswered": selected_answer is None
         })
 
-    score = round((correct_count / len(questions)) * 10, 1) if questions else 0
-    
+    # Eliminamos el cálculo antiguo basado en porcentaje:
+    # score = round((correct_count / len(questions)) * 10, 1) if questions else 0
+
     if subject:
         try:
             with get_db_connection() as conn:
@@ -173,10 +174,28 @@ def submit():
             print(f"Error al actualizar la base de datos: {e}")
             return jsonify({"error": "Error al actualizar resultados"}), 500
     
+    # Obtener configuración de puntuación para la asignatura
+    scoring = get_scoring_config(subject)
+    
+    correct_count = sum(1 for r in results if r['is_correct'])
+    incorrect_count = sum(1 for r in results if not r['is_correct'] and not r['unanswered'])
+    blank_count = sum(1 for r in results if r['unanswered'])
+    
+    # Calcular nota final usando los valores de configuración
+    final_score = (
+        float(scoring['base_score']) +
+        (correct_count * float(scoring['correct_value'])) -
+        (incorrect_count * float(scoring['incorrect_penalty'])) -
+        (blank_count * float(scoring['blank_penalty']))
+    )
+    
+    # Asegurar que la nota está entre 0 y 10
+    final_score = max(0, min(10, final_score))
+    
     return jsonify({
-        "correct_count": correct_count,
-        "nota": score,
-        "results": results
+        'results': results,
+        'correct_count': correct_count,
+        'final_score': final_score
     })
 
 @app.route("/upload", methods=["POST"])
@@ -269,6 +288,59 @@ def upload_file():
         flash(f'Error en la base de datos: {str(e)}', 'error')
     
     return redirect(url_for('index'))
+
+def get_scoring_config(subject=None):
+    """Obtiene la configuración de puntuación para una asignatura específica o la global"""
+    with get_db_connection() as conn:
+        conn.row_factory = sqlite3.Row
+        if subject:
+            cursor = conn.execute(
+                'SELECT * FROM scoring_config WHERE subject = ?',
+                (subject,)
+            )
+        else:
+            cursor = conn.execute(
+                'SELECT * FROM scoring_config WHERE subject IS NULL'
+            )
+        config = cursor.fetchone()
+        
+        # Si no hay configuración específica, usar la global
+        if not config:
+            cursor = conn.execute(
+                'SELECT * FROM scoring_config WHERE subject IS NULL'
+            )
+            config = cursor.fetchone()
+            
+        return config
+
+@app.route('/api/scoring-config', methods=['GET'])
+def api_get_scoring_config():
+    subject = request.args.get('subject')
+    config = get_scoring_config(subject)
+    return jsonify({
+        'correct_value': float(config['correct_value']),
+        'incorrect_penalty': float(config['incorrect_penalty']),
+        'blank_penalty': float(config['blank_penalty']),
+        'base_score': float(config['base_score'])
+    })
+
+@app.route('/api/scoring-config', methods=['POST'])
+def update_scoring_config():
+    config = request.get_json()
+    with get_db_connection() as conn:
+        conn.execute('''
+            UPDATE scoring_config 
+            SET correct_value = ?, incorrect_penalty = ?, 
+                blank_penalty = ?, base_score = ?
+            WHERE id = 1
+        ''', (
+            config['correct_value'],
+            config['incorrect_penalty'],
+            config['blank_penalty'],
+            config['base_score']
+        ))
+        conn.commit()
+        return jsonify({'status': 'success'})
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)

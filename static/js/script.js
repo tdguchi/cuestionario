@@ -85,18 +85,17 @@ function submitQuiz() {
             throw new Error("Invalid response from server");
         }
 
-        // Calculate unanswered questions
+        // Calculate values for display (no local grade calculation)
         const unansweredCount = data.results.filter(r => r.unanswered).length;
         const incorrectCount = data.results.length - data.correct_count - unansweredCount;
-        const score = (data.correct_count / data.results.length * 10).toFixed(1);
-        
-        // Create results card with updated stats
+
+        // Create results card using final_score from the server
         const resultContainer = document.getElementById('results');
         resultContainer.innerHTML = `
             <div class='results-card fade-in'>
                 <div class='results-summary'>
                     <div class='result-stat'>
-                        <h5>${score}</h5>
+                        <h5>${data.final_score}</h5>
                         <p>Nota final</p>
                     </div>
                     <div class='result-stat'>
@@ -110,10 +109,6 @@ function submitQuiz() {
                     <div class='result-stat'>
                         <h5>${unansweredCount}</h5>
                         <p>Sin responder</p>
-                    </div>
-                    <div class='result-stat'>
-                        <h5>${((data.correct_count / data.results.length) * 100).toFixed(0)}%</h5>
-                        <p>Aciertos</p>
                     </div>
                 </div>
             </div>
@@ -158,6 +153,41 @@ function submitQuiz() {
         submitBtn.querySelector('.loading-spinner').style.display = 'none';
     });
 }
+
+// Cargar configuración de puntuación
+async function loadScoringConfig() {
+    const response = await fetch('/api/scoring-config');
+    const config = await response.json();
+    
+    document.getElementById('correct-value').value = config.correct_value;
+    document.getElementById('incorrect-penalty').value = config.incorrect_penalty;
+    document.getElementById('blank-penalty').value = config.blank_penalty;
+    document.getElementById('base-score').value = config.base_score;
+}
+
+// Guardar configuración de puntuación
+async function saveScoringConfig() {
+    const config = {
+        correct_value: parseFloat(document.getElementById('correct-value').value),
+        incorrect_penalty: parseFloat(document.getElementById('incorrect-penalty').value),
+        blank_penalty: parseFloat(document.getElementById('blank-penalty').value),
+        base_score: parseFloat(document.getElementById('base-score').value)
+    };
+
+    await fetch('/api/scoring-config', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(config)
+    });
+}
+
+// Añadir event listeners para guardar configuración
+document.querySelectorAll('.scoring-config input').forEach(input => {
+    input.addEventListener('change', saveScoringConfig);
+});
+
+// Cargar configuración al inicio
+loadScoringConfig();
 
 // Initialize config visibility on page load
 setupConfigVisibility();
