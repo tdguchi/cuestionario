@@ -39,6 +39,22 @@ document.querySelector('.config-master-toggle')?.addEventListener('click', funct
 // Get all questions
 const questions = Array.from(document.querySelectorAll('.mb-4[data-question]'));
 
+// Allow selecting and deselecting answers
+questions.forEach(question => {
+    const inputs = question.querySelectorAll('.form-check-input');
+    inputs.forEach(input => {
+        let lastChecked = null;
+        input.addEventListener('click', function(event) {
+            if (this === lastChecked) {
+                this.checked = false;
+                lastChecked = null;
+            } else {
+                lastChecked = this;
+            }
+        });
+    });
+});
+
 function submitQuiz() {
     // Get submit button and show loading state
     const submitBtn = document.querySelector('.submit-quiz');
